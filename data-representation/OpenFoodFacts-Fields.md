@@ -1,0 +1,526 @@
+# *Open Food Facts* Dataset
+
+---
+
+## Generic information about fields
+
+1. Attributes with the same information. Examples:
+ - `countries`, `countries_tags`, `countries_en`.
+ - `states`, `states_tags`, `states_en`.
+ - `brands` and `brands_tags`. I think `brands_tags` is better.
+2. Problem when we have non-basic ingredients. Example: **vegetable oil** in `Bananas, vegetable oil (coconut oil, corn oil and/or palm oil) sugar, natural banana flavor.`
+3. Lots of NaN values (16 columns are entirely NaN).
+4. Generalities ([see](https://static.openfoodfacts.org/data/data-fields.txt)):
+
+ - fields that end with **t** are dates in the UNIX timestamp format (number of seconds since Jan 1st 1970)
+ - fields that end with **datetime** are dates in the iso8601 format: yyyy-mm-ddThh:mn:ssZ
+ - fields that end with **tags** are comma separated list of tags (e.g. categories_tags is the set of normalized tags computer from the categories field)
+ - fields that end with a language 2 letter code (e.g. fr for French) is the set of tags in that language
+ - fields that end with **100g** correspond to the amount of a nutriment (in g, or kJ for energy) for 100 g or 100 ml of product
+ - fields that end with **serving** correspond to the amount of a nutriment (in g, or kJ for energy) for 1 serving of the product
+
+---
+
+## Shape
+(356027, 163)
+Every row has NaN values
+
+## Columns
+- **code**
+	 - Datatype: object
+	 - Info: Numeric code like `0000000004530`
+- **url**
+	 - Datatype: object
+	 - Info: url of the product page on Open Food Facts. Example `http://world-en.openfoodfacts.org/product/0000000004530/banana-chips-sweetened-whole`
+- **creator**
+	 - Datatype: object
+	 - Info: contributor who first added the product. The value is `usda-ndb-import`
+- **created_t**
+	 - Datatype: object
+	 - Info: Number like `1489069957`
+- **created_datetime**
+	 - Datatype: object
+	 - Info: Date format: `2017-03-09T14:32:37Z`
+- **last_modified_t**
+	 - Datatype: object
+	 - Info: In the most cases, same value as **created_t**
+- **last_modified_datetime**
+	 - Datatype: object
+	 - Info: same format as **created_datetime** (In the most cases, also same value)
+- **product_name**
+	 - Datatype: String
+	 - Info: Example: `Organic Salted Nut Mix`, `Breadshop Honey Gone Nuts Granola`
+- **generic_name**
+	 - Datatype: object
+	 - Info: NaN
+- **quantity**
+	 - Datatype: object
+	 - Info: quantity and unit, values in ml,kg,g.... Lots of NaN values
+- **packaging**
+	 - Datatype: object
+	 - Info: (shape, material) lots of NaN. Example: `plastique`
+- **packaging_tags**
+	 - Datatype: object
+	 - Info: lots of NaN. Example: `plastique`
+- **brands**
+	 - Datatype: String
+	 - Info: Example: `Grizzlies`, `Unfi`, `Daddy's Muesli`, `Torn & Glasser`,...
+- **brands_tags**
+	 - Datatype: String
+	 - Info: It has the same content as `brands`, but is written in only a word format. Example: `grizzlies`, `unfi`, `daddy-s-muesli`, `torn-glasser`,...
+- **categories**
+	 - Datatype: object
+	 - Info: Lots of NaN. It's not really usefull. For example, the product `Filet de bœuf`, its category is `Filet de bœuf`.
+- **categories_tags**
+	 - Datatype: object
+	 - Info: Lots of NaN
+- **categories_en**
+	 - Datatype: object
+	 - Info: Lots of NaN
+- **origins**
+	 - Datatype: object
+	 - Info: origins of ingredients. Lots of NaN
+- **origins_tags**
+	 - Datatype: object
+	 - Info: Lots of NaN
+- **manufacturing_places**
+	 - Datatype: object
+	 - Info: places where manufactured or transformed
+- **manufacturing_places_tags**
+	 - Datatype: object
+	 - Info: Lots of NaN
+- **labels**
+	 - Datatype: object
+	 - Info: Lots of NaN
+- **labels_tags**
+	 - Datatype: object
+	 - Info: Lots of NaN
+- **labels_en**
+	 - Datatype: object
+	 - Info: Lots of NaN
+- **emb_codes**
+	 - Datatype: object
+	 - Info: Lots of NaN
+- **emb_codes_tags**
+	 - Datatype: object
+	 - Info: NaN
+- **first_packaging_code_geo**
+	 - Datatype: object
+	 - Info: NaN
+- **cities**
+	 - Datatype: object
+	 - Info: NaN
+- **cities_tags**
+	 - Datatype: object
+	 - Info: NaN
+- **purchase_places**
+	 - Datatype: object
+	 - Info: NaN
+- **stores**
+	 - Datatype: object
+	 - Info: NaN
+- **countries**
+	 - Datatype: object
+	 - Info: list of countries where the product is sold. There are 1638 different values in this column.
+- **countries_tags**
+	 - Datatype: object
+	 - Info: It's a tag to represent the value of the attribute `countries`. In this case, its tag is `en:united-states`.
+- **countries_en**
+	 - Datatype: object
+	 - Info: OTher name to represent the same value of *countries* and *countries_tags*. In this case, the value is `United States`.
+- **ingredients_text**
+	 - Datatype: object
+	 - Info: A list with the ingredients (sometimes with more information on specific ingredients), separated by comma. Example: `Bananas, vegetable oil (coconut oil, corn oil and/or palm oil) sugar, natural banana flavor.`
+- **allergens**
+	 - Datatype: object
+	 - Info: NaN
+- **allergens_en**
+	 - Datatype: object
+	 - Info: NaN
+- **traces**
+	 - Datatype: object
+	 - Info: NaN
+- **traces_tags**
+	 - Datatype: object
+	 - Info: NaN
+- **traces_en**
+	 - Datatype: object
+	 - Info: NaN
+- **serving_size**
+	 - Datatype: object
+	 - Info:
+	 - Measures: Officially, serving size is in g, but I have seen:  g (and cup), g (and ONZ), ml (and Tbsp),
+- **no_nutriments**
+	 - Datatype: float64
+	 - Info:  indicates if the nutrition facts are indicated on the food label
+- **additives_n**
+	 - Datatype: float64
+	 - Info: number of food additives
+- **additives**
+	 - Datatype: object
+	 - Info: Example of the format: `[ wheat -> en:wheat  ]  [ rye -> en:rye  ]  [ triticale -> en:triticale  ]  [ oat -> en:oat  ]  [ corn -> en:corn  ]  [ barley -> en:barley  ]  [ soy-bean -> en:soy-bean  ]  [ bean -> en:bean  ]  [ brown-rice -> en:brown-rice  ]  [ rice -> en:rice  ]  [ and-millet-flours -> en:and-millet-flours  ]  [ millet-flours -> en:millet-flours  ]  [ flours -> en:flours  ]  [ flaxseed -> en:flaxseed  ]  [ buttermilk-powder -> en:buttermilk-powder  ]  [ powder -> en:powder  ]  [ non-aluminum-baking-powder -> en:non-aluminum-baking-powder  ]  [ aluminum-baking-powder -> en:aluminum-baking-powder  ]  [ baking-powder -> en:baking-powder  ]  [ powder -> en:powder  ]  [ baking-soda -> en:baking-soda  ]  [ soda -> en:soda  ]  [ sodium-phosphate -> en:e339  -> exists  -- ok  ]  [ cornstarch -> en:cornstarch  ]  [ and-monocalcium-phosphate -> en:and-monocalcium-phosphate  ]  [ monocalcium-phosphate -> en:e341i  -> exists  -- ok  ]  [ sea-salt -> en:sea-salt  ]  [ salt -> en:salt  ] `
+- **additives_tags**
+	 - Datatype: object
+	 - Info: Sometimes is NaN (also when additives attribut is filled). `en:e339,en:e341,en:e341i`
+- **additives_en**
+	 - Datatype: object
+	 - Info: It only has a value when **additives_tags** is also filled. Example:
+
+	 additives_tag: `en:e339,en:e341,en:e341i`
+
+	 additives_en: `E339 - Sodium phosphates,E341 - Calcium phosphates,E341i - Monocalcium phosphate`
+
+- **ingredients_from_palm_oil_n**
+	 - Datatype: float64
+	 - Info: natural number. It has a lot of rows with a `0`. Also, they have NaN values. 	
+- **ingredients_from_palm_oil**
+	 - Datatype: float64
+	 - Info:
+- **ingredients_from_palm_oil_tags**
+	 - Datatype: object
+	 - Info:
+- **ingredients_that_may_be_from_palm_oil_n**
+	 - Datatype: float64
+	 - Info: natural number
+- **ingredients_that_may_be_from_palm_oil**
+	 - Datatype: float64
+	 - Info: Lots of NaN. Example: `e481-stearoyl-2-lactylate-de-sodium,e472e-ester-monoacethyltartrique-de-mono-et-diglycerides-d-acides-gras,e472b-ester-diacetyl-lactique-de-mono-et-diglycerides-d-acides-gras`
+- **ingredients_that_may_be_from_palm_oil_tags**
+	 - Datatype: object
+	 - Info: .......................
+- **nutrition_grade_uk**
+	 - Datatype: float64
+	 - Info: ALWAYS NaN
+- **nutrition_grade_fr**
+	 - Datatype: object
+	 - Info: posible values: nutrition grade ('a' to 'e'). see http://fr.openfoodfacts.org/score-nutritionnel-experimental-france. Also, there are a lot of NaN values.
+- **pnns_groups_1**
+	 - Datatype: object
+	 - Info: Lots of NaN. Sometimes, the value is  `Unknown`
+- **pnns_groups_2**
+	 - Datatype: object
+	 - Info: Lots of NaN. Sometimes, the value is  `Unknown`
+- **states**
+	 - Datatype: object
+	 - Info: Same information as **states_en** and **states_tags**.
+	 - Example: `en:to-be-completed, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-uploaded`
+- **states_tags**
+	 - Datatype: object
+	 - Info: Same information as **states** and **states_en**.
+	 - Example: `en:to-be-completed,en:nutrition-facts-completed,en:ingredients-completed,en:expiration-date-to-be-completed,en:packaging-code-to-be-completed,en:characteristics-to-be-completed,en:categories-to-be-completed,en:brands-completed,en:packaging-to-be-completed,en:quantity-to-be-completed,en:product-name-completed,en:photos-to-be-uploaded`
+- **states_en**
+	 - Datatype: object
+	 - Info: Same information as **states** and **states_tags**.
+	 - Example: `To be completed,Nutrition facts completed,Ingredients completed,Expiration date to be completed,Packaging-code-to-be-completed,Characteristics to be completed,Categories to be completed,Brands completed,Packaging to be completed,Quantity to be completed,Product name completed,Photos to be uploaded`
+- **main_category**
+	 - Datatype: object
+	 - Info: Lots of NaN. Example `fr:filet-de-boeuf`
+- **main_category_en**
+	 - Datatype: object
+	 - Info: Lots of NaN. Example `fr:Filet-de-boeuf`
+- **image_url**
+	 - Datatype: object
+	 - Info: URL like `http://en.openfoodfacts.org/images/products/000/000/002/4600/front.3.400.jpg` . Lots of NaN values
+- **image_small_url**
+	 - Datatype: object
+	 - Info: URL like `http://en.openfoodfacts.org/images/products/000/000/002/4600/front.3.200.jpg`. Lots of NaN values
+- **energy_100g**
+	 - Datatype: float64
+	 - Info: natural number. The unit is kJ ([see](https://www.kaggle.com/openfoodfacts/world-food-facts/discussion/21132))
+- **energy-from-fat_100g**
+	 - Datatype: float64
+	 - Info:  is only the part of energy100g that comes from fat. The unit is kJ.
+- **fat_100g**
+	 - Datatype: float64
+	 - Info:  for each 100g, only the part that comes from fat. Measurement unit: gram
+- **saturated-fat_100g**
+	 - Datatype: float64
+	 - Info: for each 100g, only the part that comes from saturated fats. Measurement unit: gram
+- **-butyric-acid_100g**
+	 - Datatype: float64
+	 - Info: It's ALWAYS NaN
+- **-caproic-acid_100g**
+	 - Datatype: float64
+	 - Info: It's ALWAYS NaN
+- **-caprylic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-capric-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-lauric-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-myristic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-palmitic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-stearic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-arachidic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-behenic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-lignoceric-acid_100g**
+	 - Datatype: float64
+	 - Info: It's ALWAYS NaN
+- **-cerotic-acid_100g**
+	 - Datatype: float64
+	 - Info: It's ALWAYS NaN
+- **-montanic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-melissic-acid_100g**
+	 - Datatype: float64
+	 - Info: It's ALWAYS NaN
+- **monounsaturated-fat_100g**
+	 - Datatype: float64
+	 - Info:
+- **polyunsaturated-fat_100g**
+	 - Datatype: float64
+	 - Info:
+- **omega-3-fat_100g**
+	 - Datatype: float64
+	 - Info:
+- **-alpha-linolenic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-eicosapentaenoic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-docosahexaenoic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **omega-6-fat_100g**
+	 - Datatype: float64
+	 - Info:
+- **-linoleic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-arachidonic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-gamma-linolenic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-dihomo-gamma-linolenic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **omega-9-fat_100g**
+	 - Datatype: float64
+	 - Info:
+- **-oleic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-elaidic-acid_100g**
+	 - Datatype: float64
+	 - Info: It's ALWAYS NaN
+- **-gondoic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **-mead-acid_100g**
+	 - Datatype: float64
+	 - Info: It's ALWAYS NaN
+- **-erucic-acid_100g**
+	 - Datatype: float64
+	 - Info: It's ALWAYS NaN
+- **-nervonic-acid_100g**
+	 - Datatype: float64
+	 - Info: It's ALWAYS NaN
+- **trans-fat_100g**
+	 - Datatype: float64
+	 - Info: Measurement unit: gram
+- **cholesterol_100g**
+	 - Datatype: float64
+	 - Info: Measurement unit: gram
+- **carbohydrates_100g**
+	 - Datatype: float64
+	 - Info: Measurement unit: gram
+- **sugars_100g**
+	 - Datatype: float64
+	 - Info:
+- **-sucrose_100g**
+	 - Datatype: float64
+	 - Info:
+- **-glucose_100g**
+	 - Datatype: float64
+	 - Info:
+- **-fructose_100g**
+	 - Datatype: float64
+	 - Info:
+- **-lactose_100g**
+	 - Datatype: float64
+	 - Info:
+- **-maltose_100g**
+	 - Datatype: float64
+	 - Info:
+- **-maltodextrins_100g**
+	 - Datatype: float64
+	 - Info:
+- **starch_100g**
+	 - Datatype: float64
+	 - Info:
+- **polyols_100g**
+	 - Datatype: float64
+	 - Info:
+- **fiber_100g**
+	 - Datatype: float64
+	 - Info: Measurement unit: gram
+- **proteins_100g**
+	 - Datatype: float64
+	 - Info: Measurement unit: gram
+- **casein_100g**
+	 - Datatype: float64
+	 - Info:
+- **serum-proteins_100g**
+	 - Datatype: float64
+	 - Info:
+- **nucleotides_100g**
+	 - Datatype: float64
+	 - Info:
+- **salt_100g**
+	 - Datatype: float64
+	 - Info: Measurement unit: gram
+- **sodium_100g**
+	 - Datatype: float64
+	 - Info: Measurement unit: gram
+- **alcohol_100g**
+	 - Datatype: float64
+	 - Info:
+- **vitamin-a_100g**
+	 - Datatype: float64
+	 - Info:
+- **beta-carotene_100g**
+	 - Datatype: float64
+	 - Info:
+- **vitamin-d_100g**
+	 - Datatype: float64
+	 - Info:
+- **vitamin-e_100g**
+	 - Datatype: float64
+	 - Info:
+- **vitamin-k_100g**
+	 - Datatype: float64
+	 - Info:
+- **vitamin-c_100g**
+	 - Datatype: float64
+	 - Info: Measurement unit: gram
+- **vitamin-b1_100g**
+	 - Datatype: float64
+	 - Info:
+- **vitamin-b2_100g**
+	 - Datatype: float64
+	 - Info:
+- **vitamin-pp_100g**
+	 - Datatype: float64
+	 - Info:
+- **vitamin-b6_100g**
+	 - Datatype: float64
+	 - Info:
+- **vitamin-b9_100g**
+	 - Datatype: float64
+	 - Info:
+- **folates_100g**
+	 - Datatype: float64
+	 - Info:
+- **vitamin-b12_100g**
+	 - Datatype: float64
+	 - Info:
+- **biotin_100g**
+	 - Datatype: float64
+	 - Info:
+- **pantothenic-acid_100g**
+	 - Datatype: float64
+	 - Info:
+- **silica_100g**
+	 - Datatype: float64
+	 - Info:
+- **bicarbonate_100g**
+	 - Datatype: float64
+	 - Info:
+- **potassium_100g**
+	 - Datatype: float64
+	 - Info:
+- **chloride_100g**
+	 - Datatype: float64
+	 - Info:
+- **calcium_100g**
+	 - Datatype: float64
+	 - Info: Measurement unit: gram
+- **phosphorus_100g**
+	 - Datatype: float64
+	 - Info:
+- **iron_100g**
+	 - Datatype: float64
+	 - Info: Measurement unit: gram
+- **magnesium_100g**
+	 - Datatype: float64
+	 - Info:
+- **zinc_100g**
+	 - Datatype: float64
+	 - Info:
+- **copper_100g**
+	 - Datatype: float64
+	 - Info:
+- **manganese_100g**
+	 - Datatype: float64
+	 - Info:
+- **fluoride_100g**
+	 - Datatype: float64
+	 - Info:
+- **selenium_100g**
+	 - Datatype: float64
+	 - Info:
+- **chromium_100g**
+	 - Datatype: float64
+	 - Info:
+- **molybdenum_100g**
+	 - Datatype: float64
+	 - Info:
+- **iodine_100g**
+	 - Datatype: float64
+	 - Info:
+- **caffeine_100g**
+	 - Datatype: float64
+	 - Info:
+- **taurine_100g**
+	 - Datatype: float64
+	 - Info:
+- **ph_100g**
+	 - Datatype: float64
+	 - Info:
+- **fruits-vegetables-nuts_100g**
+	 - Datatype: float64
+	 - Info:
+- **fruits-vegetables-nuts-estimate_100g**
+	 - Datatype: float64
+	 - Info: % of fruits, vegetables and nuts (excluding potatoes, yams, manioc)
+- **collagen-meat-protein-ratio_100g**
+	 - Datatype: float64
+	 - Info:
+- **cocoa_100g**
+	 - Datatype: float64
+	 - Info:
+- **chlorophyl_100g**
+	 - Datatype: float64
+	 - Info: It's ALWAYS NaN
+- **carbon-footprint_100g**
+	 - Datatype: float64
+	 - Info: carbon footprint (indicated on some products)
+- **nutrition-score-fr_100g**
+	 - Datatype: float64
+	 - Info: experimental nutrition score derived from the UK FSA score and adapted for the French market (formula defined by the team of Professor Hercberg). It's a natural number. Lots of NaN values. Sometimes, the value is negative.
+- **nutrition-score-uk_100g**
+	 - Datatype: float64
+	 - Info: nutrition score defined by the UK Food Standards Administration (FSA). It is a natural number. Lots of NaN values. Sometimes, the value is negative.
+- **glycemic-index_100g**
+	 - Datatype: float64
+	 - Info: It's ALWAYS NaN
+- **water-hardness_100g**
+	 - Datatype: float64
+	 - Info: It's ALWAYS NaN
