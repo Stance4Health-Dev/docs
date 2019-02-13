@@ -38,7 +38,7 @@
 | Phosphorus (mg) | x |  | x |
 | Zinc (mg) | x (in µg) |  | x |
 | Magnesium (mg) | x |  | x |
-| Cupper (mg) | x (in µg) |  | x |
+| Cupper - Copper (mg) | x (in µg) |  | x |
 | Selenium (µg) |  |  | x |
 | Chloride (mg) | x |  | x |
 | Iodine (µg) |  |  | x |
