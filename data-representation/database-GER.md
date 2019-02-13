@@ -1,154 +1,150 @@
 # German database
 
-
-
 ## Information about fields
 
-- **Food Name (GER)**
-- **Food Name (EN)**
-- ~~Food Name (ESP)~~
-- Nährwerte - **Nutritional values**: values per 100g
-- Energie (kcal) - **Energy (kcal)**: kcal
-- Energie (kJ) - **Energy (kJ)**: kJ
-- Fett - **Fat**: mg
-- Kohlenhydrate	- **Carbohydrates**: mg
-- Eiweiß (Protein) - **Protein**: mg
+- Food Name (GER)
+- Food Name (EN)
+- Food Name (ESP)
+- Nährwerte - Nutritional values: values per 100g
+- Energie (kcal) - Energy (kcal): kcal
+- Energie (kJ) - Energy (kJ): kJ
+- Fett - Fat: mg
+- Kohlenhydrate	- Carbohydrates: mg
+- Eiweiß (Protein) - Protein: mg
 - Salz - Salt: mg
-- Ballaststoffe - **Dietary Fibre**: mg
+- Ballaststoffe - Dietary Fibre: mg
 - Mineralstoffe	- Minerals: mg
-
----
-- Broteinheiten	- **Bread units**: BE
-- Vitamine - **Vitamins**: values per 100g
-- Vitamin A - Retinoläquivalent	- **Vitamin A - Retinol equivalent**: µg
-- Vitamin A - Beta-Carotin	- **Vitamin A - Beta-Carotin**: µg
-- Vitamin E - Alpha-Tocopheroläquivalent - **Vitamin E - Alpha-Tocopherol equivalent**: µg
-- Vitamin E - Alpha-Tocopherol - **Vitamin E - Alpha-Tocopherol equivalent**: µg
-- Vitamin B1 - Thiamin - **Vitamin B1 - Thiamin**
-- Vitamin B2 - Riboflavin	- **Vitamin B2 - Riboflavin**: µg
-- Vitamin B3 - Niacin, Nicotinsäure	- **Vitamin B3 - Niacin, nicotinic acid**: µg
-- Vitamin B3 - Niacinäquivalent	- **Vitamin B3 - Niacin equivalent**: µg
-- Vitamin B5 - Pantothensäure	- **Vitamin B5 - Pantothenic acid**: µg
-- Vitamin B6 - Pyridoxin - **Vitamin B6 - Pyridoxine**: µg
-- Vitamin B7 - Biotin (Vitamin H)	- **Vitamin B7 - Biotin (vitamin H)**: µg
-- Vitamin B9 - gesamte Folsäure	- **Vitamin B9 - Total folic acid**: µg
-- Vitamin C - Ascorbinsäure - **Vitamin C - Ascorbic acid**: µg
-- Kalorien - **Calories**: values per 100g
-- ~~Energie (Kilokalorien) - Energy (kcal)~~
-- ~~Energie (Kilokalorien) - Energy (kJ)~~
-- Energie inkl. Energie aus Ballaststoffen (Kilokalorien)	- **Energy incl. energy from fibre (kilocalories)**: kcal
-- Energie inkl. Energie aus Ballaststoffen (Kilojoule) - **Energy incl. energy from fibre (kilojoules)**: kJ
+- Broteinheiten	- Bread units: BE
+- Vitamine - Vitamins: values per 100g
+- Vitamin A - Retinoläquivalent	- Vitamin A - Retinol equivalent: µg
+- Vitamin A - Beta-Carotin	- Vitamin A - Beta-Carotin: µg
+- Vitamin E - Alpha-Tocopheroläquivalent - Vitamin E - Alpha-Tocopherol equivalent: µg
+- Vitamin E - Alpha-Tocopherol - Vitamin E - Alpha-Tocopherol equivalent: µg
+- Vitamin B1 - Thiamin - Vitamin B1 - Thiamin: µg
+- Vitamin B2 - Riboflavin	- Vitamin B2 - Riboflavin: µg
+- Vitamin B3 - Niacin, Nicotinsäure	- Vitamin B3 - Niacin, nicotinic acid: µg
+- Vitamin B3 - Niacinäquivalent	- Vitamin B3 - Niacin equivalent: µg
+- Vitamin B5 - Pantothensäure	- Vitamin B5 - Pantothenic acid: µg
+- Vitamin B6 - Pyridoxin - Vitamin B6 - Pyridoxine: µg
+- Vitamin B7 - Biotin (Vitamin H)	- Vitamin B7 - Biotin (vitamin H): µg
+- Vitamin B9 - gesamte Folsäure	- Vitamin B9 - Total folic acid: µg
+- Vitamin C - Ascorbinsäure - Vitamin C - Ascorbic acid: µg
+- Kalorien - Calories: values per 100g
+- Energie (Kilokalorien) - Energy (kcal)
+- Energie (Kilokalorien) - Energy (kJ)
+- Energie inkl. Energie aus Ballaststoffen (Kilokalorien)	- Energy incl. energy from fibre (kilocalories): kcal
+- Energie inkl. Energie aus Ballaststoffen (Kilojoule) - Energy incl. energy from fibre (kilojoules): kJ
 - Mineralstoffe	- Minerals: values per 100g
 - Natrium	- Sodium: mg
 - Kalium - Potassium: mg
 - Calcium	- Calcium: mg
 - Magnesium	- Magnesium: mg
 - Phosphor - Phosphorus: mg
-- Schwefel- **Sulphur**: mg
+- Schwefel- Sulphur: mg
 - Chlorid - Chloride: mg
-- Spurenelemente - **Trace elements**: values per 100g     	
+- Spurenelemente - Trace elements: values per 100g     	
 - Eisen	- Iron: µg
 - Zink - Zinc: µg
 - Kupfer - Copper: µg
 - Mangan	- Manganese: µg
 - Fluorid	- Fluoride: µg
 - Iodid - Iodide: µg
-- ~~Kohlenhydrate	- Carbohydrates: values per 100g~~
-- Glucose (Traubenzucker)	- **Glucose (dextrose)**: mg
-- Fructose (Fruchtzucker)	- **Fructose (fructose)**: mg
-- Monosaccharide (1 M) - **Monosaccharides (1 M)**: mg
+- Kohlenhydrate	- Carbohydrates: values per 100g
+- Glucose (Traubenzucker)	- Glucose (dextrose): mg
+- Fructose (Fruchtzucker)	- Fructose (fructose): mg
+- Monosaccharide (1 M) - Monosaccharides (1 M): mg
 - Saccharose (Rübenzucker) - Sucrose (beet sugar): mg
-- Disaccharide (2 M) - **Disaccharides (2 M)**: mg
+- Disaccharide (2 M) - Disaccharides (2 M): mg
 - Zucker (gesamt) - Sugar (total): mg
-- Ballaststoffe - **Dietary Fibres**: values per 100g
-- Poly-Pentosen	- **Poly-Pentoses**: mg
-- Poly-Hexosen - **Poly-Hexoses**: mg
-- Poly-Uronsäure - **Poly-uronic**: mg
-- Cellulose	- **Acid Cellulose**: mg
-- Lignin - **Lignin**: mg
-- Wasserlösliche Ballaststoffe - **Water-soluble Dietary Fibres**: mg
-- Wasserunlösliche Ballaststoffe - **Water insoluble Dietary Fibres**: mg
-- Aminosäuren	- **Amino acids**: values per 100g
-- Isoleucin	- **Isoleucine**: mg
-- Leucin - **Leucine**: mg
-- Lysin	Methionin	- **Lysine methionine**: mg
-- Cystein	- **Cysteine**: mg
-- Phenylalanin - **Phenylalanine**: mg
-- Tyrosin	- **Tyrosine**: mg
-- Threonin - **Threonine**: mg
-- Tryptophan - **Tryptophan**: mg
-- Valin - **Valine**: mg
-- Arginin	- **Arginine**: mg
-- Histidin - **Histidine**: mg
-- Essentielle Aminosäuren	- **Essential amino acids**: mg
-- Alanin - **Alanine**: mg
-- Asparaginsäure - **Aspartic acid**: mg
-- Glutaminsäure	- **Glutamic acid**: mg
+- Ballaststoffe - Dietary Fibres: values per 100g
+- Poly-Pentosen	- Poly-Pentoses: mg
+- Poly-Hexosen - Poly-Hexoses: mg
+- Poly-Uronsäure - Poly-uronic: mg
+- Cellulose	- Acid Cellulose: mg
+- Lignin - Lignin: mg
+- Wasserlösliche Ballaststoffe - Water-soluble Dietary Fibres: mg
+- Wasserunlösliche Ballaststoffe - Water insoluble Dietary Fibres: mg
+- Aminosäuren	- Amino acids: values per 100g
+- Isoleucin	- Isoleucine: mg
+- Leucin - Leucine: mg
+- Lysin	Methionin	- Lysine methionine: mg
+- Cystein	- Cysteine: mg
+- Phenylalanin - Phenylalanine: mg
+- Tyrosin	- Tyrosine: mg
+- Threonin - Threonine: mg
+- Tryptophan - Tryptophan: mg
+- Valin - Valine: mg
+- Arginin	- Arginine: mg
+- Histidin - Histidine: mg
+- Essentielle Aminosäuren	- Essential amino acids: mg
+- Alanin - Alanine: mg
+- Asparaginsäure - Aspartic acid: mg
+- Glutaminsäure	- Glutamic acid: mg
 - Glycin	- Glycine: mg
 - Prolin - Proline: mg
 - Serin	- Serine: mg
-- Nichtessentielle Aminosäuren - **Nonessential amino acids**: mg
-- Harnsäure	- **Uric acid**: mg
+- Nichtessentielle Aminosäuren - Nonessential amino acids: mg
+- Harnsäure	- Uric acid: mg
 - Purin - Purine: mg
-- Fettsäuren - **Fatty acids**: values per 100g
-- Dodecansäure/Laurinsäure - **Dodecanoic acid/Lauric acid**: mg
-- Tetradecansäure/Myristinsäure	- **Tetradecanoic acid/Myristic acid**: mg
-- Hexadecansäure/Palmitinsäure - **Hexadecanoic acid/Palmitic acid**: mg
-- Octadecansäure/Stearinsäure	- **Octadecanoic acid/Stearic acid**: mg
-- Gesättigte Fettsäuren - **Saturated fatty acids**: mg
-- Hexadecensäure/Palmitoleinsäure	- **Hexadecenoic acid/palmitoleic acid**: mg
-- Octadecensäure/Ölsäure - **Octadecenoic acid/oleic acid**: mg
-- Einfach ungesättigte Fettsäuren - **Monounsaturated fatty acids**: mg
-- Octadecadiensäure/Linolsäure - **Octadecadienoic acid/linoleic acid**: mg
-- Octadecatriensäure/Linolensäure	- **Octadecatrienoic acid/Linolenic acid**: mg
-- Mehrfach ungesättigte Fettsäuren - **Polyunsaturated fatty acids**: mg
-- Langkettige Fettsäuren - **Long chain fatty acids**: mg
-- Omega-3-Fettsäuren - **Omega-3 fatty acids**: mg
-- Omega-6-Fettsäuren - **Omega-6 fatty acids**: mg
-- Glycerin und Lipoide - **Glycerin and Lipoids**: mg
-- Stärke - **Starch**: mg
-- Polysaccharide (> 9 M) - **Polysaccharides (> 9 M)**: mg
-- Vitamin B12 - Cobalamin - **Vitamin B12 - Cobalamin**: µg (few data)
-- Mannit - **Mannitol**: mg (few data)
-- Sorbit - **Sorbitol**: mg (few data)
-- Summe Zuckeralkohole - **Sum of sugar alcohols**: mg (few data)
-- Galactose (Schleimzucker) - **Galactose (mucilage sugar)**: mg (few data)
-- Maltose (Malzzucker) - **Maltose**: mg (few data)
+- Fettsäuren - Fatty acids: values per 100g
+- Dodecansäure/Laurinsäure - Dodecanoic acid/Lauric acid: mg
+- Tetradecansäure/Myristinsäure	- Tetradecanoic acid/Myristic acid: mg
+- Hexadecansäure/Palmitinsäure - Hexadecanoic acid/Palmitic acid: mg
+- Octadecansäure/Stearinsäure	- Octadecanoic acid/Stearic acid: mg
+- Gesättigte Fettsäuren - Saturated fatty acids: mg
+- Hexadecensäure/Palmitoleinsäure	- Hexadecenoic acid/palmitoleic acid: mg
+- Octadecensäure/Ölsäure - Octadecenoic acid/oleic acid: mg
+- Einfach ungesättigte Fettsäuren - Monounsaturated fatty acids: mg
+- Octadecadiensäure/Linolsäure - Octadecadienoic acid/linoleic acid: mg
+- Octadecatriensäure/Linolensäure	- Octadecatrienoic acid/Linolenic acid: mg
+- Mehrfach ungesättigte Fettsäuren - Polyunsaturated fatty acids: mg
+- Langkettige Fettsäuren - Long chain fatty acids: mg
+- Omega-3-Fettsäuren - Omega-3 fatty acids: mg
+- Omega-6-Fettsäuren - Omega-6 fatty acids: mg
+- Glycerin und Lipoide - Glycerin and Lipoids: mg
+- Stärke - Starch: mg
+- Polysaccharide (> 9 M) - Polysaccharides (> 9 M): mg
+- Vitamin B12 - Cobalamin - Vitamin B12 - Cobalamin: µg (few data)
+- Mannit - Mannitol: mg (few data)
+- Sorbit - Sorbitol: mg (few data)
+- Summe Zuckeralkohole - Sum of sugar alcohols: mg (few data)
+- Galactose (Schleimzucker) - Galactose (mucilage sugar): mg (few data)
+- Maltose (Malzzucker) - Maltose: mg (few data)
 - Oligosaccharide, resorbierbar (3 - 9 M)	- Oligosaccharides, absorbable (3 - 9 M): mg (few data)
 - Oligosaccharide, nicht resorbierbar	- Oligosaccharides, non-absorbable: mg (few data)
-- Heptadecansäure	- **Heptadecanoic acid**: mg
-- Eicosansäure/Arachinsäure - **Eicosanoic acid/Araquinic acid**: mg
-- Vitamin A - Retinol	- **Vitamin A - Retinol**: mg (few data)
-- Vitamin D - Calciferole	- **Vitamin D - Calciferols**: mg (few data)
-- Hexansäure/Capronsäure - **Hexanoic acid/Caproic acid**: mg (few data)
-- Decansäure/Caprinsäure - **Decanoic acid/Capric acid**: mg (few data)
-- Pentadecansäure - **Pentadecanoic acid**: mg
-- Decosansäure/Behensäure - **Decosanoic acid/Behenic acid**: mg (few data)
-- Tetracosansäure/Lignocerinsäure	- **Tetracosanoic acid/Lignoceric acid**: mg (few data)
-- Tetradecensäure - **Tetradecenoic acid**: mg (few data)
-- Eicosensäure - **Eicosene acid**: mg
-- Decosensäure/Erucasäure - **Decosene acid/Erucaic acid**: mg
-- Octradecatetraensäure/Stearidonsäure - **Octradecatetraenoic acid/stearidonic acid**: mg (few data)
-- Eicosadiensäure - **Eicosadienoic acid**: mg (few data)
-- Eicosatriensäure - **Eicosatrienoic acid**: mg (few data)
-- Eicosatetraensäure/Arachidonsäure - **Eicosatetraenoic acid/Arachidonic acid**: mg (few data)
-- Eicosapentaensäure - **Eicosapentaenoic acid**: mg (few data)
-- Docosatetraensäure - **Docosatetraenoic acid**: mg (few data)
-- Docosapentaensäure - **Docosapentaenoic acid**: mg (few data)
-- Docosahexaensäure	- **Docosahexaenoic acid**: mg (few data)
-- Kurzkettige Fettsäuren - **Short chain fatty acids**: mg (few data)
-- Mittelkettige Fettsäuren - **Medium chain fatty acids**: mg (few data)
-- Cholesterin	- **Cholesterol**: mg
-- Lactose (Milchzucker)	- **Lactose (lactose)**: mg (few data)
-- Butansäure/Buttersäure - **Butanoic acid/Butyric acid**: mg (few data)
-- Octansäure/Caprylsäure - **Octanoic acid/Caprylic acid**: mg (few data)
-- Pentadecensäure - **Pentadecenoic acid** (few data)
-- Heptadecensäure - **Heptadecenoic acid**: mg (few data)
-- Glykogen (tierische Stärke) - **Glycogen (animal starch)**: mg (few data)
-- Tetracosensäure/Nervonsäure - **Tetracosenoic acid/nervonic acid**: mg (few data)
-- Nonadecatriensäure - **Nonadecatrienoic acid**: mg (few data)
-- Xylit - **Xylitol**: mg (few data)
-- Hexadecadiensäure - **Hexadecadienoic acid**
-- Docosadiensäure - **Docosadienoic acid**: mg (few data)
-- Docosatriensäure - **Docosatrienoic acid**: mg (few data)
-- Hexadecatetraensäure - **Hexadecatetraenoic acid**: mg (few data)
+- Heptadecansäure	- Heptadecanoic acid: mg
+- Eicosansäure/Arachinsäure - Eicosanoic acid/Araquinic acid: mg
+- Vitamin A - Retinol	- Vitamin A - Retinol: mg (few data)
+- Vitamin D - Calciferole	- Vitamin D - Calciferols: mg (few data)
+- Hexansäure/Capronsäure - Hexanoic acid/Caproic acid: mg (few data)
+- Decansäure/Caprinsäure - Decanoic acid/Capric acid: mg (few data)
+- Pentadecansäure - Pentadecanoic acid: mg
+- Decosansäure/Behensäure - Decosanoic acid/Behenic acid: mg (few data)
+- Tetracosansäure/Lignocerinsäure	- Tetracosanoic acid/Lignoceric acid: mg (few data)
+- Tetradecensäure - Tetradecenoic acid: mg (few data)
+- Eicosensäure - Eicosene acid: mg
+- Decosensäure/Erucasäure - Decosene acid/Erucaic acid: mg
+- Octradecatetraensäure/Stearidonsäure - Octradecatetraenoic acid/stearidonic acid: mg (few data)
+- Eicosadiensäure - Eicosadienoic acid: mg (few data)
+- Eicosatriensäure - Eicosatrienoic acid: mg (few data)
+- Eicosatetraensäure/Arachidonsäure - Eicosatetraenoic acid/Arachidonic acid: mg (few data)
+- Eicosapentaensäure - Eicosapentaenoic acid: mg (few data)
+- Docosatetraensäure - Docosatetraenoic acid: mg (few data)
+- Docosapentaensäure - Docosapentaenoic acid: mg (few data)
+- Docosahexaensäure	- Docosahexaenoic acid: mg (few data)
+- Kurzkettige Fettsäuren - Short chain fatty acids: mg (few data)
+- Mittelkettige Fettsäuren - Medium chain fatty acids: mg (few data)
+- Cholesterin	- Cholesterol: mg
+- Lactose (Milchzucker)	- Lactose (lactose): mg (few data)
+- Butansäure/Buttersäure - Butanoic acid/Butyric acid: mg (few data)
+- Octansäure/Caprylsäure - Octanoic acid/Caprylic acid: mg (few data)
+- Pentadecensäure - Pentadecenoic acid (few data)
+- Heptadecensäure - Heptadecenoic acid: mg (few data)
+- Glykogen (tierische Stärke) - Glycogen (animal starch): mg (few data)
+- Tetracosensäure/Nervonsäure - Tetracosenoic acid/nervonic acid: mg (few data)
+- Nonadecatriensäure - Nonadecatrienoic acid: mg (few data)
+- Xylit - Xylitol: mg (few data)
+- Hexadecadiensäure - Hexadecadienoic acid
+- Docosadiensäure - Docosadienoic acid: mg (few data)
+- Docosatriensäure - Docosatrienoic acid: mg (few data)
+- Hexadecatetraensäure - Hexadecatetraenoic acid: mg (few data)
