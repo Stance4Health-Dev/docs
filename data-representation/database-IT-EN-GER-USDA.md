@@ -1,4 +1,4 @@
-# Common and no common fields of  Italian, German and English Database
+# Common and no common fields of  Italian, German, English FDA - USDA Database
 
 |  |  | German database | English database | Italian database | FDA - USDA |
 |---|---|---|---|---|---|
