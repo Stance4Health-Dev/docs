@@ -90,7 +90,7 @@ As we are working with a relational data base, there are relations within the ta
 
 
 
-<p align="center"><img alt="Docker Hello World" width="900px" src="./images/fda-tables.png" /></p>
+<p align="center"><img alt="Docker Hello World" width="400px" src="./images/fda-tables.png" /></p>
 
 
 #### Food description
