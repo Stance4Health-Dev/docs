@@ -3,6 +3,9 @@
 ## Vital statistics
 24 years, Female, Puertollano, Spain
 
+## Diseases
+* Celiac
+
 ## Job 
 Nurse. Actually working with cancer patients.
 
@@ -16,7 +19,7 @@ Mobile Iphone / personal laptop
 - https://www.lanzadigital.com/provincia/ciudad-real/ciudad-real-bares-habitante/
 
 ## Queries
-- Usually she buys the same products that she already knows are gluten free.
-- Quick access to a database that allows to verify components of products.
-- Discover new recipes suitable for her
-- Notification of new free gluten restaurants.
+* Usually she buys the same products that she already knows are gluten free.
+* Quick access to a database that allows to verify components of products.
+* Discover new recipes suitable for her
+* Notification of new free gluten restaurants.
