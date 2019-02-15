@@ -1,20 +1,32 @@
-Edmund Robert
-(38 años /  hombre / Alemania)
+# Edmund Robert
 
-“Mi médico me ha dicho que empiece a cuidar mi alimentación o puedo padecer alguna insuficiencia cardíaca.”
+## Vital statistics
 
-- Camionero.
-- Casado con un hijo.
-- Pasa mucho tiempo sentado al volante.
-- Come la mayoría de las veces en restaurantes.
-- Tiene poco tiempo para organizar su alimentación semanal.
+Man, 38 years, Germany
 
-Dispositivo de la empresa:
-Móvil Android
+## Job
 
-Dispositivo privado:
-Móvil Android, Portátil
+Truck driver; he spends a lot of time driving.
 
+
+## Devices
+
+Uses a laptop and mobile phone.
+
+## Links
+
+He will be one of the potential clients of the [Stance4health project](http://www.stance4health.com/).
+
+## Queries
+
+* Find quick recipe recommendations.
+* Discover ways to take care of your diet.
+* Consult a weekly diet with certain requirements or restrictions.
+* Maintain calorie control.
+
+
+<!-------
 Enlaces:
 - https://www.forotransporteprofesional.es/conductores-de-camion-un-sector-en-riesgo-de-sobrepeso/
 - https://www.fuso.com.pe/blog/habitos_alimenticios_conductores_de_camiones/
+-------->
