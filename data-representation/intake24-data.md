@@ -152,122 +152,122 @@ sandwich bap butty panini piece roll sarnie softie sub toastie wrap
 - Edible Portion
 - Deleted Food Flag
 - Water
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Total nitrogen
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Nitrogen conversion factor
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Protein
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Fat
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Carbohydrate
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Energy (kcal)
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Energy (kJ)
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Alcohol
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Englyst fibre
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Southgate fibre
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Starch
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Total sugars
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Non-milk extrinsic sugars
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Intrinsic and milk sugars
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Glucose
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Fructose
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Sucrose
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Maltose
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Lactose
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Other sugars
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Satd FA
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Cis-Mon FA
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Cis-n3 FA
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Cis-n6 FA
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Trans FA
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Cholesterol
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Retinol
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Total carotene
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Alpha-carotene
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Beta-carotene
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Beta cryptoxanthin
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Vitamin A
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Vitamin D
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Thiamin
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Riboflavin
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Niacin
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Tryptophan/60
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Niacin equivalent
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Vitamin C
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Vitamin E
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Vitamin B6
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Vitamin B12
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Folate
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Pantothenic acid
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Biotin
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Sodium
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Potassium
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Calcium
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Magnesium
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Phosphorus
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Iron
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Haem iron
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Non-haem iron
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Copper
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Zinc
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Chloride
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Iodine
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Manganese
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
 - Selenium
-- Estimate
+- Estimate (yes/no and sometimes the value is in this column instead of the prior attribute in the table)
