@@ -4,7 +4,7 @@ Edmund Robert
 “Mi médico me ha dicho que empiece a cuidar mi alimentación o puedo padecer alguna insuficiencia cardíaca.”
 
 - Camionero.
-- Casado con un hijos.
+- Casado con un hijo.
 - Pasa mucho tiempo sentado al volante.
 - Come la mayoría de las veces en restaurantes.
 - Tiene poco tiempo para organizar su alimentación semanal.
