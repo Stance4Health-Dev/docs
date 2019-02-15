@@ -6,8 +6,7 @@
 ## Job 
 Nurse. Actually working with cancer patients.
 
-"Going out to have lunch or dinner limits me a lot, most of the restaurants I go to are not prepared to offer a gluten-free menu and they have always doubts. So, she always bring her own bread, to be sure.
-I would like "
+"Going out to have lunch or dinner limits me a lot, most of the restaurants I go are not prepared to offer a gluten-free menu and they have always doubts. So, I always bring my own bread, to be sure."
 
 ## Devices
 Mobile Iphone / personal laptop
