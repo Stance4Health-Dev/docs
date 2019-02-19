@@ -1,7 +1,7 @@
 # Common and no common fields of  Italian, German, English FDA - USDA Database
 
 |  |  | German database | English database | Italian database | FDA - USDA | Greek database |
-|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | 1 | Food Name (EN) | x | x | x | x | x |
 | 2 | Food Code |  | x |  |  | |
 | 3 | Description |  | x |  |  | |
