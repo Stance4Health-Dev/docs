@@ -3,10 +3,9 @@
 ## Information about fields
 
 - Food Name
-- Energy: Kcal
-- Protein: g
-- Total Lipids: g
-- SFA: g
+- Protein (g)
+- Energy (kcal)
+- SFA (Saturated fatty acids): g
 - MUFA (Monounsaturated Fatty Acids): g
 - PUFA (Poly-unsaturated Fatty Acids): g
 - Carbohydrates: g

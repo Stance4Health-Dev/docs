@@ -21,7 +21,7 @@
 | 17 | ~~Calories (values per 100g)~~ | x |  |  | | |
 | 18 | Cholesterol (mg) | x | x |  x | x | |
 | 19 | Ash (g) |  |  |  | x | |
-| 20 | Energy (kcal) | x | x | x | x | |
+| 20 | Energy (kcal) | x | x | x | x | x|
 | 21 | Energy, Rec with fibre (kcal) | x |  | x | | |
 | 22 | Energy (kJ) | x  | x | x | | |
 | 23 | Energy, Rec with fibre (kJ) | x |  | x | | |
