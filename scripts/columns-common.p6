@@ -2,16 +2,7 @@
 
 use v6;
 
-my @lines = "../data-representation/database-IT-EN-GER-USDA-GRE.md".IO.lines;
+my %classed = "../data-representation/database-IT-EN-GER-USDA-GRE.md".IO.lines.grep( /^^ \s* \| \s+ \d+ \s+ \|/ ).classify( { ($_ ~~ m:g/\| \s+ x/).elems } );
 
-my @names = @lines.grep( /^^ \s* \| \s+ \d+ \s+ \|/ );
-
-my %present;
-for @lines -> $l {
-    my $name = $l.split("|")[2];
-    my $checks = ($l ~~ m:g/\| \s+ x/).elems;
-    %present{$checks}.push: $name;
-}
-
-say "$_ checks → ", %present{$_}.join(", ") for <4 5>;
+say "$_ checks → ", %classed{$_}.map( *.split("|")[2] ).join(", ") for <4 5>;
 
