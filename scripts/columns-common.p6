@@ -2,7 +2,7 @@
 
 use v6;
 
-my @lines = "../data-representation/database-IT-EN-GER-USDA.md".IO.lines;
+my @lines = "../data-representation/database-IT-EN-GER-USDA-GRE.md".IO.lines;
 
 my @names = @lines.grep( /^^ \s* \| \s+ \d+ \s+ \|/ );
 
