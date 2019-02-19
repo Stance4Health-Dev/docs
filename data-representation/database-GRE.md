@@ -7,8 +7,8 @@
 - Protein: g
 - Total Lipids: g
 - SFA: g
-- MUFA: g	
-- PUFA: g
+- MUFA (Monounsaturated Fatty Acids): g
+- PUFA (Poly-unsaturated Fatty Acids): g
 - Carbohydrates: g
 - Dietary Fiber: g
 - Water: g
