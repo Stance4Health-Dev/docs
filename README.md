@@ -26,14 +26,16 @@ The system needs to handle a lot of information constantly, therefore, we have c
 It is multi-paradigm, unlike other languages ​​such as [R](https://www.r-project.org/), can be oriented to different needs, such as object-oriented programming, modular development, functional programming and scripts. These scripts can be used for system administration tasks, tests, correction of errors and direct interaction with the database, among other usefull uses.
 
 It is opensource and is supported by a large community that continues to develop libraries and modules that facilitate our work. Many of these
-libraries oriented to massive data computing. ([Awesome Python](https://github.com/vinta/awesome-python))
+libraries are oriented to massive data computing. ([Awesome Python](https://github.com/vinta/awesome-python))
 
 Python has a very broad and easy to read syntax, similar to pseudocode. It allows to easily manipulate data in a table way.
 It is not necessary to declare the type of variable, depending on the content that a variable takes, it is of one type or another, this gives more flexibility when it comes to processing big data.
 
 ### Python 2.x vs 3.x
 
-> Translating..
+Both versions are incompatible, so we have chosen version 3.x for the development because it is the most recent version (3.6 2016) compared to
+the latest version 2.x (2.7 2010), which will also no longer have support next year.
+Most of the 2.x libraries are already available in 3.x, in the following [link](https://python3wos.appspot.com/) we can see some of those that are not available in red color.
 
 
 ##Test-driven development: all code emerged is tested
