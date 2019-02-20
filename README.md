@@ -28,6 +28,7 @@ Translating..
 
 Translating..
 
+
 ##Test-driven development: all code emerged is tested
 
 Developing..
@@ -35,6 +36,7 @@ Developing..
 ### Example tests
 
 Developing..
+
 
 ##Use Cases: Using Personas
 
