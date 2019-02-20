@@ -2,7 +2,6 @@
 
 - food-name
 - energy-kcal
-- ~~Energy (kJ)~~
 - total-lipids-fats
 - protein
 - cholesterol
@@ -16,7 +15,7 @@
 - lactose
 - retinol-equivalent
 - retinol   
-- Beta-carotene-equivalent
+- beta-carotene-equivalent
 - vitamin-B1
 - thiamin
 - vitamin-B2
