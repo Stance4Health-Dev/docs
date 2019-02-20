@@ -1,0 +1,43 @@
+# Fields appear in enough databases
+
+- Food name
+- Energy (kcal)
+- Energy (kJ)  
+- Total lipids/fats
+- Protein
+- Cholesterol
+- Carbohydrates
+- Starch  
+- Sugars
+- Glucose
+- Galactose
+- Fructose
+- Maltose
+- Lactose
+- Retinol eq. (RE)
+- Retinol   
+- Beta-carotene eq.  
+- Vitamin B1
+- Thiamin
+- Vitamin B2
+- Riboflavin
+- Vitamin C
+- Niacin
+- Vitamin D
+- Vitamin E
+- Alpha-tocopherol (ATE)
+- Vitamin B12
+- Dietary Fibre/Fiber
+- Water
+- Iron  
+- Calcium
+- Sodium
+- Potassium
+- Phosphorus  
+- Zinc  
+- Magnesium
+- Manganese
+- Copper  
+- Saturated fatty acids (SFA)
+- Monounsaturated fatty acids
+- Polyunsaturated fatty acids
