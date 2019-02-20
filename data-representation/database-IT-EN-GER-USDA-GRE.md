@@ -25,13 +25,13 @@
 | 21 | Energy, Rec with fibre (kcal) | x |  | x | | |
 | 22 | Energy (kJ) | x  | x | x | | |
 | 23 | Energy, Rec with fibre (kJ) | x |  | x | | |
-| 24 | Fat (mg) | x | x (in g) | x (in g - Total fat) | x (Total lipid) |  x (total lipid) |
+| 24 | Fat (mg) | x | x (in g) | x (in g - Total fat) | x (Total lipid) |  x (Total lipids) |
 | 25 | Animal Fat (g) |  |  | x | | |
 | 26 | Vegetable Fat (g) |  |  | x | | |
-| 27 | Carbohydrates (mg) | x | x (in g) |  | x (in g)| x |
+| 27 | Carbohydrates (mg) | x | x (in g) |  | x (in g)| x (in g) |
 | 28 | Available carbohydrates (MSE) (g) |  | | x | |  |
 | 29 | Soluble carbohydrates (MSE) (g) |  |  | x | | |
-| 30 | Protein (mg) | x | x (in g) | x (in g - Total protein) | x (in mg) | x (g) |
+| 30 | Protein (mg) | x | x (in g) | x (in g - Total protein) | x (in mg) | x (in g) |
 | 31 | Animal Protein (g) |  |  | x | | |
 | 32 | Vegetable Protein (g) |  |  | x | | |
 | 33 | Starch (g) | x (in mg) | x | x | | |
@@ -189,12 +189,12 @@
 | 185 | Saturated fatty acids per 100g food	(g) |  | x |  | | |
 | 186 | Saturated fatty acids excluding branch per 100 g fatty acid	(g) |  | x |  | | |
 | 187 | Saturated fatty acids excluding branch per 100 g food	(g) |  | x |  | | |
-| 188 | Monounsaturated fatty acids (g)|  x (in mg) |  | x | x | x |
+| 188 | Monounsaturated fatty acids (g)|  x (in mg) |  | x | x | x (MUFA) |
 | 189 | Monounsaturated fatty acids per 100g fatty acids (g) |  | x |  | | |
 | 190 | Monounsaturated fatty acids per 100g food	(g) |  | x |  | | |
 | 191 | cis-Monounsaturated fatty acids /100g FA	(g) |  | x |  | | |
 | 192 | cis-Monounsaturated fatty acids /100g Food	(g) |  | x |  | | |
-| 193 | Polyunsaturated fatty acids (g)| x (in mg) |  | x | x | x |
+| 193 | Polyunsaturated fatty acids (g)| x (in mg) |  | x | x | x (PUFA) |
 | 194 | Other polyunsaturated fatty acids (g)|  |  | x | | |
 | 195 | Polyunsaturated fatty acids per 100g fatty acids	(g) |  | x |  | | |
 | 196 | Polyunsaturated fatty acids per 100g food	(g) |  | x |  | | |
