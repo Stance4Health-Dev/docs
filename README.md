@@ -14,12 +14,6 @@ In this document you can see how the project is being implemented, what technolo
 how the data will be treated in terms of management and migration.
 This repository was created with the purpose of collecting information for the development of Stance4Health.  
 
-At the moment, you can find information about:
-
-- [Representation of Food Composition databases](https://github.com/Stance4Health-Dev/docs/tree/master/data-representation) like [FDA](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/sr28-download-files/), [Open Food Facts](https://world.openfoodfacts.org/), [Intake24](https://intake24.co.uk/) and so on.
-
-
-
 ## Python as data management
 
 The system needs to handle a lot of information constantly, therefore, we have chosen the Python programming language as the main development language. Python is an interpreted language, slower than others, like C ++, but you only need one interpreter to run it, which makes it cross-platform. In addition, it comes pre-installed in many systems like Linux or Mac.
@@ -56,8 +50,11 @@ Most of the 2.x libraries are already available in 3.x, in the following [link](
 
 Neo4j VS bio4j VS Elastic
 
-> Developing..
+At the moment, you can find information about:
+
+- [Representation of Food Composition databases](https://github.com/Stance4Health-Dev/docs/tree/master/data-representation) like [FDA](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/sr28-download-files/), [Open Food Facts](https://world.openfoodfacts.org/), [Intake24](https://intake24.co.uk/) and so on.
+
 
 ### Migration
 
-External information sources
+> Developing..
