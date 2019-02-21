@@ -30,8 +30,7 @@ Both versions are incompatible, so we have chosen version 3.x for the developmen
 the latest version 2.x (2.7 2010), which will also no longer have support next year.
 Most of the 2.x libraries are already available in 3.x, in the following [link](https://python3wos.appspot.com/) we can see some of those that are not available in red color.
 
-
-##Test-driven development: all code emerged is tested
+## Test-driven development: all code emerged is tested
 
 Test-driven development is the programming technique used to develop the system. This technique includes:
 
@@ -59,7 +58,7 @@ List of actions focused on passing the tests:
 - XSS: injection of malicious javascritp code. Ex: web based applications.
 
 
-##Use Cases: Using Personas
+## Use Cases: Using Personas
 Personas are user models that are represented as specific, individual humans [4,5,6]. The notion helps designers focus on specific individuals, rather than design one product for all.
     
 > Developing..
