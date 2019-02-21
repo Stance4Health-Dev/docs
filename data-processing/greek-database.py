@@ -1,7 +1,9 @@
 import pyexcel as pe
 
+from correspondences import get_correspondences
 
-def process_greek_db(filename = "hhf-greece.gr.xlsx"):
+# ------------------------------------------------------------------------------
+def process_greek_db(fields_correspondences,filename = "hhf-greece.gr.xlsx"):
 
     ## Read the sheet
     sheet = pe.get_sheet(file_name=filename)
@@ -15,23 +17,23 @@ def process_greek_db(filename = "hhf-greece.gr.xlsx"):
 
     # Get field names
     row_names = sheet.row[0]
+    # # Then we modify them
+    row_names[0]="Food name" # we modify it because it is ' '
 
-    # Then we modify them
-    row_names[0]="Food name"
-    row_names[4]="Total lipids/fats (g)"
-    row_names[5]="Saturated fatty acids (SFA) (g)"
-    row_names[6]="Monounsaturated fatty acids (g)"
-    row_names[7]="Polyunsaturated fatty acids (g)"
-    row_names[9]="Dietary Fiber/Fibre (g)"
+    n_fields = len(row_names)
 
-    # Replace the values in the first row (it's the one with the field names)
-    sheet.row[0] = row_names
+    for i in range(n_fields):
+        row_names[i] = fields_correspondences[row_names[i]]
 
     # Save all the changes
+    sheet.row[0] = row_names
     sheet.save_as("processed-greek-db.xlsx")
 
     pass
 
 
+# ------------------------------------------------------------------------------
 
-process_greek_db()
+if __name__ == "__main__":
+    fields_correspondences = get_correspondences()
+    process_greek_db(fields_correspondences)
