@@ -28,8 +28,8 @@
 | 24 | Fat (mg) | x | x (in g) | x (in g - Total fat) | x (Total lipid) |  x (Total lipids) |
 | 25 | Animal Fat (g) |  |  | x | | |
 | 26 | Vegetable Fat (g) |  |  | x | | |
-| 27 | Carbohydrates (mg) | x | x (in g) |  | x (in g)| x (in g) |
-| 28 | Available carbohydrates (MSE) (g) |  | | x | |  |
+| 27 | Carbohydrates (mg) | x | x (in g) | x (in g) | x (in g - from Available carbohydrate)| x (in g) |
+| 28 | ~~Available carbohydrates (MSE) (g)~~ |  | | ~~x~~ | |  |
 | 29 | Soluble carbohydrates (MSE) (g) |  |  | x | | |
 | 30 | Protein (mg) | x | x (in g) | x (in g - Total protein) | x (in mg) | x (in g) |
 | 31 | Animal Protein (g) |  |  | x | | |
