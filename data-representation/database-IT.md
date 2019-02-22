@@ -41,7 +41,8 @@
 - Sulphur: mg
 - Vitamin B1, Thiamin: mg
 - Vitamin B2, Riboflavin: mg
-- Vitamin C	Niacin: mg
+- Vitamin C: mg
+- Niacin: mg
 - Vitamin B6: mg
 - Total folate: µg
 - Pantotenic acid: mg
