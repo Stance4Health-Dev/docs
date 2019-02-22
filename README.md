@@ -2,11 +2,11 @@
 
 ## Abstract
 
-[Stance4Health](http://www.stance4health.com/) is an [European Union’s Horizon 2020 project](https://cordis.europa.eu/project/rcn/218510/factsheet/es) fosters a global ecosystem while enabling collection, management, and analysis of healthcare and feeding data, with the aim of developing a **Smart Personalized Nutrition** service, based on food production that will optimize the gut microbiota activity.
-It will be tailored to different target groups, from healthy children and adults to children with coeliac disease or food allergy, 
-as well as overweight children and adults, which will have an impact on the development of NCDs such as obesity or type 2 diabetes. 
-The specific personalised nutrition tools developed along Stance4Health will be based on robust scientific evidence and knowledge 
-from different fields like nutrition, medicine, food sciences, microbiology, computer sciences, and social sciences and humanities 
+[Stance4Health](http://www.stance4health.com/) is an [European Union’s Horizon 2020 project](https://cordis.europa.eu/project/rcn/218510/factsheet/es) which fosters a global ecosystem while enabling collection, management, and analysis of healthcare and feeding data, with the aim of developing a **Smart Personalized Nutrition** service, based on food production that will optimize the gut microbiota activity.
+It will be tailored to different target groups, from healthy children and adults to children with coeliac disease or food allergy,
+as well as overweight children and adults, which will have an impact on the development of NCDs such as obesity or type 2 diabetes.
+The specific personalised nutrition tools developed along Stance4Health will be based on robust scientific evidence and knowledge
+from different fields like nutrition, medicine, food sciences, microbiology, computer sciences, and social sciences and humanities
 like economics, marketing, psychology and social anthropology.
 
 In this document you can see how the project is being implemented, what technologies will be used, what programming technique is most appropriate, and
@@ -19,7 +19,7 @@ The system needs to handle a lot of information constantly, therefore, we have c
 It is multi-paradigm, unlike other languages ​​such as [R](https://www.r-project.org/), can be oriented to different needs, such as object-oriented programming, modular development, functional programming and scripts. These scripts can be used for system administration tasks, tests, correction of errors and direct interaction with the database, among other usefull uses.
 
 It is opensource and is supported by a large community that continues to develop libraries and modules that facilitate our work. Many of these
-libraries are oriented to massive data computing. ([Awesome Python](https://github.com/vinta/awesome-python))
+libraries are oriented to massive data computing ([Awesome Python](https://github.com/vinta/awesome-python)).
 
 Python has a very broad and easy to read syntax, similar to pseudocode. It allows to easily manipulate data in a table way.
 It is not necessary to declare the type of variable, depending on the content that a variable takes, it is of one type or another, this gives more flexibility when it comes to processing different types of data.
@@ -60,7 +60,7 @@ List of actions focused on passing the tests:
 
 ## Use Cases: Using Personas
 Personas are user models that are represented as specific, individual humans [4,5,6]. The notion helps designers focus on specific individuals, rather than design one product for all.
-    
+
 > Developing..
 
 No es necesario que una persona represente un único usuario, una persona puede abarcar un conjunto de usuarios.
