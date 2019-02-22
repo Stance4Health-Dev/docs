@@ -1,96 +1,98 @@
-# Common and no common fields of  Italian, German, English FDA - USDA Database
+# Fields in databases
 
-|  |  | German database | English database | Italian database | FDA - USDA | Greek database |
-|---|---|---|---|---|---|---|
-| 1 | Food Name (EN) | x | x | x | x | x |
-| 2 | Food Code |  | x |  |  | |
-| 3 | Description |  | x |  |  | |
-| 4 | Group |  | x |  |  | |
-| 5 | Previous |  | x |  |  | |
-| 6 | Main data references |  | x |  |  | |
-| 7 | Footnote |  | x |  |  | |
-| 8 | Scientific Name |  |  | x |  | |
-| 9 | Food Category |  |  | x |  | |
-| 10 | Edible part |  |  | x |  | |
-| 11 | First household weight for this item from the Weight file |  |  |  | x | |
-| 12 | Description of household weight number 1 |  |  |  | x | |
-| 13 | Second household weight for this item from the Weight file |  |  |  | x | |
-| 14 | Description of household weight number 2 |  |  |  | x | |
-| 15 | Percent refuse |  |  |  | x | |
-| 16 | ~~Nutritional values (values per 100g)~~ | x |  |  | | |
-| 17 | ~~Calories (values per 100g)~~ | x |  |  | | |
-| 18 | Cholesterol (mg) | x | x |  x | x | |
-| 19 | Ash (g) |  |  |  | x | |
-| 20 | Energy (kcal) | x | x | x | x | x|
-| 21 | Energy, Rec with fibre (kcal) | x |  | x | | |
-| 22 | Energy (kJ) | x  | x | x | | |
-| 23 | Energy, Rec with fibre (kJ) | x |  | x | | |
-| 24 | Fat (mg) | x | x (in g) | x (in g - Total fat) | x (Total lipid) |  x (Total lipids) |
-| 25 | Animal Fat (g) |  |  | x | | |
-| 26 | Vegetable Fat (g) |  |  | x | | |
-| 27 | Carbohydrates (mg) | x | x (in g) | x (in g) | x (in g - from Available carbohydrate)| x (in g) |
-| 28 | ~~Available carbohydrates (MSE) (g)~~ |  | | ~~x~~ | |  |
-| 29 | Soluble carbohydrates (MSE) (g) |  |  | x | | |
-| 30 | Protein (mg) | x | x (in g) | x (in g - Total protein) | x (in mg) | x (in g) |
-| 31 | Animal Protein (g) |  |  | x | | |
-| 32 | Vegetable Protein (g) |  |  | x | | |
-| 33 | Starch (g) | x (in mg) | x | x | | |
-| 34 | Glycogen (animal starch) (mg) | x |  |  | | |
-| 35 | Non-starch polysaccharideAOAC fibre	(g) |  | x |  | | |
-| 36 | Salt (mg) | x |  |  | | |
-| 37 | Dietary Fibre (mg) | x |  | x (in g) | x (in g - Total dietary fiber) |  x (in g - Total dietary fiber) |
-| 38 | ~~Minerals (values per 100g)~~ | x |  |  | | |
-| 39 | Water  (g) | | x | x | x | x |
-| 40 | Water soluble Dietary Fibres (mg) | x |  |  | | |
-| 41 | Water insoluble Dietary Fibres (mg) | x  |  |  | | |
-| 42 | Nitrogen (g) |  | x |  | | |
-| 43 | Mannitol (mg) | x | |   | | |
-| 44 | Sorbitol (mg) | x | |   | | |
-| 45 | Iron (mg) | x (in µg) |  | x | x | x|
-| 46 | Calcium (mg) | x |  | x | x | x |
-| 47 | Sodium (mg) | x |  | x | x | x |
-| 48 | Potassium (mg) | x |  | x |  x | x |
-| 49 | Phosphorus (mg) | x |  | x | x | x|
-| 50 | Zinc (mg) | x (in µg) |  | x | x | x|
-| 51 | Magnesium (mg) | x |  | x | x | x|
-| 52 | Cupper - Copper (mg) | x (in µg) |  | x | x | x|
-| 53 | Selenium (µg) |  |  | x | x | |
-| 54 | Chloride (mg) | x |  | x | | |
-| 55 | Iodine (µg) |  |  | x | | |
-| 56 | Sulphur (mg)| x |  | x | | |
-| 57 | Lignin (mg) | x |  |  | | |
-| 58 | Manganese (mg) | x (in µg) |  | x  | x | |
-| 59 | Oligosaccharide (g) |  | x |  | | |
-| 60 | Oligosaccharides, absorbable (mg) | x |  |  | | |
-| 61 | Oligosaccharides, non-absorbable (mg) | x |  |  | | |
-| 62 | Alcohol (g) |  | x |  x | | |
-| 63 | Sum of sugar alcohols (mg) | x | |   | | |
-| 64 | Sugars (g) | x (in mg) | x |  | x | |
-| 65 | Sucrose (mg) | x | x (in g) |  | | |
-| 66 | Glucose (g)| x (in mg) | x | x | | |
-| 67 | Galactose (g)| x (in mg)  | x | x | | |
-| 68 | Fructose (g)| x (in mg) | x | x | | |
-| 69 | Saccarose (g)|  |  | x | | |
-| 70 | Maltose (g)| x (in mg) | x | x | | |
-| 71 | Lactose (g)| x (in mg) | x | x | | |
-| 72 | Serine (mg) | x |  | x | | |
-| 73 | Proline (mg) | x |  | x | | |
-| 74 | Glycine (mg) | x |  | x | | |
-| 75 | Valine (mg)| x |  | x | | |
-| 76 | Arginine (mg)| x |  | x | | |
-| 77 | Histidine (mg)| x |  | x | | |
-| 78 | Alanine (mg)| x |  | x | | |
-| 79 | Tryptophan (mg) | x |  | x | | |
-| 80 | Threonine (mg) | x |  | x | | |
-| 81 | Isoleucine (mg) | x |  | x | | |
-| 82 | Leucine (mg) | x |  | x | | |
-| 83 | Lysine (mg) | x |  | x | | |
-| 84 | Methionine (mg) |  |  | x | | |
-| 85 | Cystine (mg) | x |  | x | | |
-| 86 | Phenilalanine / Phenylalanine (mg) | x |  | x | | |
-| 87 | Tyrosine (mg) | x |  | x | | |
-| 88 | Fluoride (µg) | x |  |  | | |
-| 89 | Iodide (µg)  | x  |  |  | | |
+|  | Name | Unified Name | EuroFir Name |
+|---|---|---|---|
+| 1 | Food Name (EN) | food-name | |
+| 2 | Food Code | food Code | |
+| 3 | Description | description | |
+| 4 | Group | group | |
+| 5 | Previous | previous | |
+| 6 | Main data references | main-data-references | |
+| 7 | Footnote | footnote | |
+| 8 | Scientific Name | scientific-name | |
+| 9 | Food Category | food-category | |
+| 10 | Edible part | edible-part | |
+| 11 | First household weight for this item from the Weight file | first-household-weight  | |
+| 12 | Description of household weight number 1 | description-household-weight-number |  |
+| 13 | Second household weight for this item from the Weight file | second-household-weight| |
+| 14 | Description of household weight number 2 | description-household-weight | |
+| 15 | Percent refuse |  percent-refuse |  |
+| 16 | ~~Nutritional values (values per 100g)~~ |  |  |  
+| 17 | ~~Calories (values per 100g)~~ | |  |
+| 18 | Cholesterol | cholesterol | |
+| 19 | Ash | ash |  |
+| 20 | Energy (kcal) | energy-kcal | |
+| 21 | Energy, Rec with fibre (kcal) | energy-fibre-kcal |  |
+| 22 | Energy (kJ) | energy-kj | |
+| 23 | Energy, Rec with fibre (kJ) | energy-fibre-kj |  |
+| 24 | Fat / Total fat / Total lipid / Total lipids | total-lipids-fats | |
+| 25 | Animal Fat | animal-Fat | |
+| 26 | Vegetable Fat  | vegetable-fat | |
+| 27 | Carbohydrates / Available carbohydrate |carbohydrates |  |
+| 28 | ~~Available carbohydrates (MSE)~~ |  |  |
+| 29 | Soluble carbohydrates (MSE) | soluble-carbohydrates | |
+| 30 | Protein  | protein |  |
+| 31 | Animal Protein | animal-protein| |
+| 32 | Vegetable Protein | vegetable-protein | |
+| 33 | Starch  | starch| |
+| 34 | Glycogen (animal starch)  | glycogen | |
+| 35 | Non-starch polysaccharideAOAC fibre | non-starch-polysaccharideAOAC-fibre | |
+| 36 | Salt | salt | |
+| 37 | Dietary Fibre / Total dietary fiber (mg) | dietary-fibre-fiber |  |
+| 38 | ~~Minerals (values per 100g)~~ | | |
+| 39 | Water  | water | |
+| 40 | Water soluble Dietary Fibres  | water-soluble | |
+| 41 | Water insoluble Dietary Fibres  | water-insoluble  | |
+| 42 | Nitrogen | nitrogen| |
+| 43 | Mannitol  | mannitol| |
+| 44 | Sorbitol | sorbitol| |
+| 45 | Iron | iron | |
+| 46 | Calcium | calcium |  |
+| 47 | Sodium | sodium|  |
+| 48 | Potassium  | potassium |  |
+| 49 | Phosphorus  | phosphorus | |
+| 50 | Zinc | zinc | |
+| 51 | magnesium | magnesium | |
+| 52 | Cupper / Copper  | copper | |
+| 53 | Selenium | selenium | |
+| 54 | Chloride  | chloride| |
+| 55 | Iodine  | iodine| |
+| 56 | Sulphur | sulphur| |
+| 57 | Lignin  | lignin | |
+| 58 | Manganese | manganese | |
+| 59 | Oligosaccharide | oligosaccharide | |
+| 60 | Oligosaccharides, absorbable  | oligosaccharides-absorbable| |
+| 61 | Oligosaccharides, non-absorbable | oligosaccharides-non-absorbable| |
+| 62 | Alcohol | alcohol | |
+| 63 | Sum of sugar alcohols (mg) | sum-sugar-alcohols ||
+| 64 | Sugars | sugars | |
+| 65 | Sucrose  | sucrose | |
+| 66 | Glucose | glucose | |
+| 67 | Galactose | galactose | |
+| 68 | Fructose | fructose| |
+| 69 | Saccarose | saccarose| |
+| 70 | Maltose | maltose| |
+| 71 | Lactose | lactose | |
+| 72 | Serine  | serine | |
+| 73 | Proline  | proline| |
+| 74 | Glycine  | glycine| |
+| 75 | Valine | valine| |
+| 76 | Arginine | arginine| |
+| 77 | Histidine | histidine| |
+| 78 | Alanine | alanine | |
+| 79 | Tryptophan  | tryptophan| |
+| 80 | Threonine  | threonine| |
+| 81 | Isoleucine (mg) | isoleucine | |
+| 82 | Leucine  | leucine| |
+| 83 | Lysine  | lysine| |
+| 84 | Methionine (mg) | methionine | |
+| 85 | Cystine  | cystine| |
+| 86 | Phenilalanine / Phenylalanine | phenylalanine | |
+| 87 | Tyrosine  | tyrosine | |
+| 88 | Fluoride | fluoride| |
+| 89 | Iodide  | iodide | |
+
+<!----
 | 90 | Glycerin and Lipoids (mg) | x |  |  | | |
 | 91 | ~~Trace elements (values per 100g)~~ | x |  |  | | |
 | 92 | Bread units (BE) | x |  |  | | |
@@ -120,12 +122,12 @@
 | 116 | Vitamin E, Alpha-tocopherol (ATE) (mg) | x (in µg) |  | x | x | |
 | 117 | Vitamin K, Phylloquinone (µg) |  |  | x | x | |
 | 118 | Vitamin B12 (µg) | x |  | x | x | |
-| 119 | Monosaccharides (1 M) (mg) | x |  |  | | |
-| 120 | Polysaccharides (mg) | x |  |  | | |
-| 121 | Disaccharides (2 M) (mg) | x |  |  | | |
-| 122 | Poly-Pentoses (mg) | x |  |  | | |
-| 123 | Poly-Hexoses: (mg) | x |  |  | | |
-| 124 | Poly-uronic: (mg) | x |  |  | | |
+| 119 | Monosaccharides | monosaccharides| |
+| 120 | Polysaccharides | polysaccharides| |
+| 121 | Disaccharides | disaccharides| |
+| 122 | Poly-Pentoses | poly-Pentoses| |
+| 123 | Poly-Hexoses | poly-Hexoses | |
+| 124 | Poly-uronic | Poly-uronic | |
 | 125 | Purine (mg) | x |  |  | | |
 | 126 | Xylitol (mg) | x |  |  | | |
 | 127 | Cellulose acid (mg) | x |  |  | | |
@@ -184,7 +186,7 @@
 | 180 | Long chain fatty acids (mg) | x |  |  | | |
 | 181 | Omega-3 fatty acids (mg) | x |  |  | | |
 | 182 | Omega-6 fatty acids (mg) | x |  |  | | |
-| 183 | Saturated fatty acids (g)| x (in mg) |  | x | x | x (SFA) |
+| 183 | Saturated fatty acids / SFA | saturated-fatty-acids | |
 | 184 | Saturated fatty acids per 100g fatty acids (g) |  | x |  | | |
 | 185 | Saturated fatty acids per 100g food	(g) |  | x |  | | |
 | 186 | Saturated fatty acids excluding branch per 100 g fatty acid	(g) |  | x |  | | |
@@ -208,3 +210,4 @@
 | 204 | Total branched chain per 100g food	(g) |  | x |  | | |
 | 205 | Total Trans fatty acids per 100g fatty acids	(g) |  | x |  | | |
 | 206 | Total Trans fatty acids per 100g food	(g) |  | x |  | | |
+----->
