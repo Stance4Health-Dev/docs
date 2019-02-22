@@ -27,8 +27,8 @@
 - Maltose: g
 - Lactose: g
 - Alcohol: g
-- Cholesterol: mg
-- NSP (g)	AOAC fibre: g
+- NSP (g)
+- AOAC fibre: g
 - Satd FA /100g FA: g (few data)
 - Satd FA /100g fd: g
 - n-6 poly /100g FA: g (few data)
@@ -49,3 +49,4 @@
 - Branched chain FA /100g food: g (few data)
 - Trans FAs /100g FA: g (few data)
 - Trans FAs /100g food: g
+- Cholesterol: mg
