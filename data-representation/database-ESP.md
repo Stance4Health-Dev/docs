@@ -49,10 +49,10 @@
 - caprico_c10_0: Caproic acid (mg)
 - laurico_c12_0: Lauric acid (mg)
 - miristico_c14_0: Myristic acid (mg)
-- c15_0: ??
+- c15_0: Pentadecanoic acid (mg)
 - c15_00: ??
 - palmitico_c16_0: Palmitic acid (mg)
-- c17_0: ??
+- c17_0: Heptadecanoic acid (mg)
 - c17_00: ??
 - estearico_c18_0: Stearic acid (mg)
 - araquidi_c20_0: Arachidic acid (mg)
@@ -60,15 +60,15 @@
 - miristol_c14_1: Myristoleic acid (mg)
 - palmitole_c16_1: Palmitoleic acid (mg)
 - oleico_c18_1: Oleic acid (mg)
-- eicoseno_c20_1: Eicosene acid (mg) 
-- c22_1: ??
+- eicoseno_c20_1: Eicosene acid (mg)
+- c22_1: Erucic acid (mg)
 - linoleico_c18_2:  Linoleic acid (mg)
 - linoleni_c18_3: Linolenic acid (mg)
-- c18_4: ??
+- c18_4: Stearidonic acid (mg)
 - ara_ico_c20_4: Arachidonic acid (mg)
-- c20_5: ??
-- c22_5: ??
-- c22_6: ??
+- c20_5: Eicosapentaenoic acid (mg)
+- c22_5: Docosapentaenoic acid (mg)
+- c22_6: Docosahexaenoic acid (mg)
 - otrosatur0: Others saturated (mg)
 - otroinsat0: Others insaturated (mg)
 - omega3_0: Omega-3 fatty acids (mg)
