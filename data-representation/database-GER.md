@@ -68,7 +68,8 @@
 - Aminosäuren	- Amino acids: values per 100g
 - Isoleucin	- Isoleucine: mg
 - Leucin - Leucine: mg
-- Lysin	Methionin	- Lysine methionine: mg
+- Lysin	- Lysine: mg
+- Methionin - methionine: mg
 - Cystein	- Cysteine: mg
 - Phenylalanin - Phenylalanine: mg
 - Tyrosin	- Tyrosine: mg
