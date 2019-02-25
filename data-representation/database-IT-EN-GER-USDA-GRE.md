@@ -139,7 +139,7 @@
 | 135 | Arachidonic acid (g)| x (in mg - Eicosatetraenoic acid / Arachidonic acid |  | x | | | x (in mg)|
 | 136 | Arachidic acid (g) |  |  | x | | | x (in mg) |
 | 137 | Pantotenic acid (mg) |  |  | x | | | |
-| 138 | Pentadecanoic acid (mg) | x |  |  | | | |
+| 138 | Pentadecanoic acid (mg) | x |  |  | | | x (c15_0)|
 | 139 | Pentadecenoic acid (mg) | x |  |  | | | |
 | 140 | Lauric acid (g)| x (in mg - Dodecanoic acid / Lauric acid) |  | x | | | x (in mg) |
 | 141 | Myristic acid (g)| x (in mg - Tetradecanoic acid / Myristic acid) |  | x | | | x (in mg)|
@@ -150,29 +150,29 @@
 | 146 | Tetracosanoic acid / Lignoceric acid  (mg) | x |  |  | | | |
 | 147 | Tetradecenoic acid (mg) | x |  |  | | | |
 | 148 | Oleic acid (g)| x (in mg - Octadecenoic acid / Oleic acid) |  | x | | | x (in mg)|
-| 149 | Octradecatetraenoic acid / Stearidonic acid (mg) | x |  |  | | | |
+| 149 | Octradecatetraenoic acid / Stearidonic acid (mg) | x |  |  | | | x (c18_4) |
 | 150 | Stearic acid (g)|  x (in mg - Octadecanoic acid / Stearic acid) |  | x | | | x (in mg) |
 | 151 | Uric acid (mg) | x |  |  | | | |
 | 152 | Decosene acid / Erucaic acid (mg) | x |  |  | | | |
-| 153 | Erucic acid (g)|  |  | x | | | |
+| 153 | Erucic acid (g)|  |  | x | | | x (in mg - c22_1)|
 | 154 | Eicosenic acid (g)|  |  | x | | | |
 | 155 | Eicosene acid (mg) | x |  |  | | | |
 | 156 | Eicosadienoic acid (mg) | x |  |  | | | |
 | 157 | Eicosatrienoic acid (mg) | x |  |  | | | |
 | 158 | ~~Eicosatetraenoic acid / Arachidonic acid (mg)~~ | ~~x~~ |  |  | | | |
 | 159 | Eicosanoic acid / Araquinic acid (mg) | x |  |  | | | |
-| 160 | Eicosapentaenoic acid (EPA) (g)| x (in mg) |  | x | | | |
+| 160 | Eicosapentaenoic acid (EPA) (g)| x (in mg) |  | x | | | x (in mg - c20_5)|
 | 161 | Decosahexaenoic acid (DHA) (g)|  |  | x | | | |
 | 162 | Nonadecatrienoic acid (mg) | x |  |  | | | |
 | 163 | Hexadecadienoic acid (mg)| x |  |  | | | |
 | 164 | Hexadecatetraenoic acid (mg) | x |  |  | | | |
 | 165 | Heptadecenoic acid (mg) | x |  |  | | | |
-| 166 | Heptadecanoic acid (mg) | x |  |  | | | |
+| 166 | Heptadecanoic acid (mg) | x |  |  | | | x (c17_0)|
 | 167 | Docosadienoic acid (mg)| x |  |  | | | |
 | 168 | Docosatrienoic acid (mg)| x |  |  | | | |
 | 169 | Docosatetraenoic acid (mg) | x |  |  | | | |
-| 170 | Docosapentaenoic acid (mg) | x |  |  | | | |
-| 171 | Docosahexaenoic acid (mg) | x |  |  | | | |
+| 170 | Docosapentaenoic acid (mg) | x |  |  | | | x (c22_5)|
+| 171 | Docosahexaenoic acid (mg) | x |  |  | | | x (c22_6) |
 | 172 | Sum of butyric, caproic, caprylic and capric acid (g)|  |  | x | | | |
 | 173 | Butanoic acid / Butyric acid (mg)| x |  |  | | | x |
 | 174 | Octanoic acid / Caprylic acid (mg) | x |  |  | | | x |
