@@ -86,7 +86,8 @@
 | 82 | Leucine (mg) | x |  | x | | | |
 | 83 | Lysine (mg) | x |  | x | | | |
 | 84 | Methionine (mg) | x |  | x | | | |
-| 85 | Cystine (mg) | x |  | x | | | |
+| 85 | Cystine (mg) |  |  | x | | | |
+| 85 | Cysteine (mg) | x |  | | | | | |
 | 86 | Phenilalanine / Phenylalanine (mg) | x |  | x | | | |
 | 87 | Tyrosine (mg) | x |  | x | | | |
 | 88 | Fluoride (µg) | x |  |  | | | x (in mg - Fluorine)|
@@ -228,4 +229,6 @@
 | 223 | Others saturated (mg)|  |  |  | | | x |
 | 224 | Others insaturated (mg) |  |  |  | | | x |
 | 225 | Subgroup |  |  |  | | | x |
-| 225 | Eicosene acid (mg) |  |  |  | | | x | 
+| 226 | Eicosene acid (mg) |  |  |  | | | x |
+| 227 | ~~Aminoacids (values per 100g)~~ | x |  |  | | |  | |
+| 228 | ~~Trace elements (values per 100g)~~ | x |  |  | | |  | |
