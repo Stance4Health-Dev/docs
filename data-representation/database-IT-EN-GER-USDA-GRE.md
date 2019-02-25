@@ -55,8 +55,8 @@
 | 51 | Magnesium (mg) | x |  | x | x | x| x |
 | 52 | Cupper - Copper (mg) | x (in µg) |  | x | x | x| x |
 | 53 | Selenium (µg) |  |  | x | x | | |
-| 54 | Chloride (mg) | x |  | x | | | x |
-| 55 | Iodine (µg) |  |  | x | | | x (in mg)|
+| 54 | Chloride - Chlorine (mg) | x |  | x | | | x |
+| 55 | Iodine - Iodide (µg) | x (Iodide) |  | x | | | x (in mg)|
 | 56 | Sulphur (mg)| x |  | x | | | |
 | 57 | Lignin (mg) | x |  |  | | | |
 | 58 | Manganese (mg) | x (in µg) |  | x  | x | | x |
@@ -89,8 +89,8 @@
 | 85 | Cystine (mg) | x |  | x | | | |
 | 86 | Phenilalanine / Phenylalanine (mg) | x |  | x | | | |
 | 87 | Tyrosine (mg) | x |  | x | | | |
-| 88 | Fluoride (µg) | x |  |  | | | |
-| 89 | Iodide (µg)  | x  |  |  | | | |
+| 88 | Fluoride (µg) | x |  |  | | | x (in mg - Fluorine)|
+| 89 | ~~Iodide (µg)~~  | ~~x~~  |  |  | | | |
 | 90 | Glycerin and Lipoids (mg) | x |  |  | | | |
 | 91 | ~~Trace elements (values per 100g)~~ | x |  |  | | | |
 | 92 | Bread units (BE) | x |  |  | | | |
@@ -102,8 +102,8 @@
 | 98 | Lutein + zeazanthin (µg) |  |  | x | | | |
 | 99 | ~~Vitamins (values per 100g)~~ | x |  |  | | | |
 | 100 | Vitamin A (IU) |  |  |  |  x | | |
-| 101 | Retinol eq. (RE) (µg) | x (in µg - Vitamin A, Retinol equivalent)  |  | x | x | | |
-| 102 | Retinol (µg) | x (in mg - Vitamin A, Retinol) |  | x | x (in μg)| | |
+| 101 | Vitamin A, Retinol eq. (RE) (µg) | x (in µg - Vitamin A, Retinol equivalent)  |  | x | x | | |
+| 102 | Vitamin A, Retinol (µg) | x (in mg - Vitamin A, Retinol) |  | x | x (in μg)| | |
 | 103 | Alpha-carotene (μg) | |  | | x | | |
 | 104 | Beta-carotene eq. (µg) | x (in µg - Vitamin A, Beta-Carotin) |  | x | x | | x (in mg - Carotenos)|
 | 105 | Beta-cryptoxanthin (µg) | |  | | x | | |
@@ -218,7 +218,7 @@
 | 214 | Chromium (mg) |  |  |  | | | x |
 | 215 | Cobalt (mg) |  |  |  | | | x |
 | 216 | Molybdenum (mg) |  |  |  | | | x |
-| 217 | Fluorine (mg) |  |  |  | | | x |
+| 217 | ~~Fluorine (mg)~~ |  |  |  | | | ~~x~~ |
 | 218 | Etanol (mg) |  |  |  | | | x |
 | 219 | Date Created |  |  |  | | | x |
 | 220 | Action |  |  |  | | | x |
