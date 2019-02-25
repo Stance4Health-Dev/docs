@@ -2,93 +2,93 @@
 
 ## Information about fields
 
-- id_alimento
-- id_alimento_completo
-- id_usuario
+- id_alimento: Food Code
+- id_alimento_completo: Food Code
+- id_usuario: ID User
 - nombre
 - nombre_alias
-- nombre_ing
-- kcal_100g
-- id_grupo
-- grupo
-- id_supergrupos
-- proteinas_porc
-- hidratos_porc
-- grasa_porc
-- subgrupo_obso
-- subgrupo
-- pc_porcentaje
-- agua_g
-- cal_kcal
-- prot_g
-- hc_g
-- grasa_g
-- satur_g
-- mono_g
-- poli_g
-- col_mg
-- fibra_g
-- sodio_mg
-- potasio_mg
-- magnesio_mg
-- calcio_mg
-- fosf_mg
-- hierro_mg
-- cloro_mg
-- cinc_mg
-- cobre_mg
-- manganeso_mg
-- cromo_mg
-- cobalto_mg
-- molibde_mg
-- yodo_mg
-- fluor_mg
-- butirico_c4_0
-- caproico_c6_0
-- caprilico_c8_0
-- caprico_c10_0
-- laurico_c12_0
-- miristico_c14_0
-- c15_0
-- c15_00
-- palmitico_c16_0
-- c17_0
-- c17_00
-- estearico_c18_0
-- araquidi_c20_0
-- behenico_c22_0
-- miristol_c14_1
-- palmitole_c16_1
-- oleico_c18_1
-- eicoseno_c20_1
-- c22_1
-- linoleico_c18_2
-- linoleni_c18_3
-- c18_4
-- ara_ico_c20_4
-- c20_5
-- c22_5
-- c22_6
-- otrosatur0
-- otroinsat0
-- omega3_0
-- etanol0
-- vit_a
-- carotenos
-- tocoferol
-- vit_d
-- vit_b1
-- vit_b2
-- vit_b6
-- niacina
-- ac_panto
-- biotina
-- folico
-- b12
-- vit_c
-- purinas
-- vit_k
-- vit_e
-- oxalico
-- accion
-- fecha_creado
+- nombre_ing: Food Name (EN)
+- kcal_100g: Energy (kcal)
+- id_grupo: ID Group
+- grupo: Group
+- id_supergrupos: ID Supergroup
+- proteinas_porc: % Protein
+- hidratos_porc: % Carbohydrates
+- grasa_porc: % Fat
+- subgrupo_obso: ??
+- subgrupo: Subgroup
+- pc_porcentaje: % PC ??
+- agua_g: Water (g)
+- cal_kcal: Energy (kcal)
+- prot_g: Protein (g)
+- hc_g: Carbohydrates (g)
+- grasa_g: Fat (g)
+- satur_g: Saturated fatty acids (g)
+- mono_g: Monounsaturated fatty acids (g)
+- poli_g: Polyunsaturated fatty acids (g)
+- col_mg: Cholesterol (mg)
+- fibra_g: Dietary Fibre (mg)
+- sodio_mg: Sodium (mg)
+- potasio_mg: Potassium (mg)
+- magnesio_mg: Magnesium (mg)
+- calcio_mg: Calcium (mg)
+- fosf_mg: Phosphorus (mg)
+- hierro_mg: Iron (mg)
+- cloro_mg: Chloride (mg)
+- cinc_mg: Zinc (mg)
+- cobre_mg: Copper (mg)
+- manganeso_mg: Manganese (mg)
+- cromo_mg: Chromium (mg)
+- cobalto_mg: Cobalt (mg)
+- molibde_mg: Molybdenum (mg)
+- yodo_mg: Iodine (mg)
+- fluor_mg: Fluorine (mg)
+- butirico_c4_0: Butyric acid (mg)
+- caproico_c6_0: Caproic acid (mg)
+- caprilico_c8_0: Caprylic acid (mg)
+- caprico_c10_0: Caproic acid (mg)
+- laurico_c12_0: Lauric acid (mg)
+- miristico_c14_0: Myristic acid (mg)
+- c15_0: ??
+- c15_00: ??
+- palmitico_c16_0: Palmitic acid (mg)
+- c17_0: ??
+- c17_00: ??
+- estearico_c18_0: Stearic acid (mg)
+- araquidi_c20_0: Arachidic acid (mg)
+- behenico_c22_0: Behenic acid (mg)
+- miristol_c14_1: Myristoleic acid (mg)
+- palmitole_c16_1: Palmitoleic acid (mg)
+- oleico_c18_1: Oleic acid (mg)
+- eicoseno_c20_1: Eicosene acid (mg) 
+- c22_1: ??
+- linoleico_c18_2:  Linoleic acid (mg)
+- linoleni_c18_3: Linolenic acid (mg)
+- c18_4: ??
+- ara_ico_c20_4: Arachidonic acid (mg)
+- c20_5: ??
+- c22_5: ??
+- c22_6: ??
+- otrosatur0: Others saturated (mg)
+- otroinsat0: Others insaturated (mg)
+- omega3_0: Omega-3 fatty acids (mg)
+- etanol0: Etanol (mg)
+- vit_a:  Vitamin A, Retinol or Vitamin A, Retinol equivalent (µg)
+- carotenos: Beta-carotene eq. (µg) or Alpha-carotene (μg)
+- tocoferol: Tocopherol (mg)
+- vit_d: Vitamin D (µg)
+- vit_b1: Vitamin B1, Thiamin (mg)
+- vit_b2:  Vitamin B2, Riboflavin (mg)
+- vit_b6: Vitamin B6 (mg)
+- niacina: Vitamin B3, Niacin, nicotinic acid (mg)
+- ac_panto: Vitamin B5, Pantothenic acid  (µg)
+- biotina: Vitamin B7, Biotin (vitamin H) (µg)
+- folico: Vitamin B9, Total folic acid (µg)
+- b12: Vitamin B12 (µg)
+- vit_c: Vitamin C (mg)
+- purinas: Purine (mg)
+- vit_k: Vitamin K (µg)
+- vit_e: Vitamin E (mg)
+- oxalico: Oxalic, Oxalic acid (-)
+- accion: Action
+- fecha_creado: Date created
