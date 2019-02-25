@@ -85,7 +85,7 @@
 | 81 | Isoleucine (mg) | x |  | x | | | |
 | 82 | Leucine (mg) | x |  | x | | | |
 | 83 | Lysine (mg) | x |  | x | | | |
-| 84 | Methionine (mg) |  |  | x | | | |
+| 84 | Methionine (mg) | x |  | x | | | |
 | 85 | Cystine (mg) | x |  | x | | | |
 | 86 | Phenilalanine / Phenylalanine (mg) | x |  | x | | | |
 | 87 | Tyrosine (mg) | x |  | x | | | |
@@ -117,6 +117,7 @@
 | 113 | Vitamin B9, Total folic acid (µg)| x |  |  | x | | x|
 | 114 | Vitamin C (mg) | x (in µg) |  | x | x (in µg) | | x (in µg) |
 | 115 | Vitamin D (µg) | x (in mg) |  | x | x (in IU) | | x |
+| 116 | Vitamin E, Alpha-tocopherol equivalent (ATE) (mg) | x (in µg) |  |  |  | |  |
 | 116 | Vitamin E, Alpha-tocopherol (ATE) (mg) | x (in µg) |  | x | x | | x |
 | 117 | Vitamin K, Phylloquinone (µg) |  |  | x | x | | x |
 | 118 | Vitamin B12 (µg) | x |  | x | x | | x|
