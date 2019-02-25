@@ -228,4 +228,4 @@
 | 223 | Others saturated (mg)|  |  |  | | | x | |
 | 224 | Others insaturated (mg) |  |  |  | | | x | |
 | 225 | Subgroup |  |  |  | | | x | |
-| 225 | Eicosene acid (mg) |  |  |  | | | x | |
+| 225 | Eicosene acid (mg) |  |  |  | | | x | | 
