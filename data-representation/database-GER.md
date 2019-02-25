@@ -20,7 +20,7 @@
 - Vitamin A - Retinoläquivalent	- Vitamin A - Retinol equivalent: µg
 - Vitamin A - Beta-Carotin	- Vitamin A - Beta-Carotin: µg
 - Vitamin E - Alpha-Tocopheroläquivalent - Vitamin E - Alpha-Tocopherol equivalent: µg
-- Vitamin E - Alpha-Tocopherol - Vitamin E - Alpha-Tocopherol equivalent: µg
+- Vitamin E - Alpha-Tocopherol - Vitamin E - Alpha-Tocopherol: µg
 - Vitamin B1 - Thiamin - Vitamin B1 - Thiamin: µg
 - Vitamin B2 - Riboflavin	- Vitamin B2 - Riboflavin: µg
 - Vitamin B3 - Niacin, Nicotinsäure	- Vitamin B3 - Niacin, nicotinic acid: µg
@@ -32,7 +32,7 @@
 - Vitamin C - Ascorbinsäure - Vitamin C - Ascorbic acid: µg
 - Kalorien - Calories: values per 100g
 - Energie (Kilokalorien) - Energy (kcal)
-- Energie (Kilokalorien) - Energy (kJ)
+- Energie (Kilojoule) - Energy (kJ)
 - Energie inkl. Energie aus Ballaststoffen (Kilokalorien)	- Energy incl. energy from fibre (kilocalories): kcal
 - Energie inkl. Energie aus Ballaststoffen (Kilojoule) - Energy incl. energy from fibre (kilojoules): kJ
 - Mineralstoffe	- Minerals: values per 100g
@@ -140,13 +140,13 @@
 - Lactose (Milchzucker)	- Lactose (lactose): mg (few data)
 - Butansäure/Buttersäure - Butanoic acid/Butyric acid: mg (few data)
 - Octansäure/Caprylsäure - Octanoic acid/Caprylic acid: mg (few data)
-- Pentadecensäure - Pentadecenoic acid (few data)
+- Pentadecensäure - Pentadecenoic acid (few data): mg
 - Heptadecensäure - Heptadecenoic acid: mg (few data)
 - Glykogen (tierische Stärke) - Glycogen (animal starch): mg (few data)
 - Tetracosensäure/Nervonsäure - Tetracosenoic acid/nervonic acid: mg (few data)
 - Nonadecatriensäure - Nonadecatrienoic acid: mg (few data)
 - Xylit - Xylitol: mg (few data)
-- Hexadecadiensäure - Hexadecadienoic acid
+- Hexadecadiensäure - Hexadecadienoic acid: mg
 - Docosadiensäure - Docosadienoic acid: mg (few data)
 - Docosatriensäure - Docosatrienoic acid: mg (few data)
 - Hexadecatetraensäure - Hexadecatetraenoic acid: mg (few data)
