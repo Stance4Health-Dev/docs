@@ -208,7 +208,7 @@
 | 204 | Total branched chain per 100g food	(g) |  | x |  | | | |
 | 205 | Total Trans fatty acids per 100g fatty acids	(g) |  | x |  | | | |
 | 206 | Total Trans fatty acids per 100g food	(g) |  | x |  | | | |
-| 208 | ID User |  |  |  | | | x |
+| 207 | ID User |  |  |  | | | x |
 | 208 | ID Group |  |  |  | | | x |
 | 209 | ID Supergroup |  |  |  | | | x |
 | 210 | % Protein |  |  |  | | | x |
