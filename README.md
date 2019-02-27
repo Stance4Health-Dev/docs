@@ -44,6 +44,10 @@ To improve efficiency and test times, automatic tests are often used. Advantages
 - Greater frequency of tests.
 - Greater depth of the tests.
 
+### Using Travis CI
+
+> Developing..
+
 ### Battery of tests
 
 It is important to have a sample list that is very complete, concrete and unambiguous.
