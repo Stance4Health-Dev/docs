@@ -60,13 +60,13 @@ List of actions focused on passing the tests:
 
 ## Use Cases: Using Personas
 Personas bring us a tool that allows to create models that represent a user or group of users focused on a specific activity. With the publication in 1998 of the book 'The Inmates Are Running the Asylum', [Alan Cooper](https://twitter.com/MrAlanCooper) begins his approach towards what we know as Personas today.
-Personas[4,5,6] is a practical way to design the interaction and user experience with the system. It is a good option when we have a complex design, since it allows to differentiate without ambiguities between the functionalities and requirements that are necessary and those that are not.
+Personas [4,5,6] is a practical way to design the interaction and user experience with the system. It is a good option when we have a complex design, since it allows to differentiate without ambiguities between the functionalities and requirements that are necessary and those that are not.
 Users tend to be divided according to three criteria:
 - Goals.
 - Chores.
 - Skill level.
 
-Let's see an example of what a future user of the system could be, using Personas methodology:
+There are different criteria and ways to represent a future user, let's see an example:
 
 ### Sofía Morales
 
@@ -93,6 +93,7 @@ Mobile Iphone / personal laptop
 #### Links
 - http://www.infoceliaco.com/index.php/restaurantes/3338-clasifican-las-10-mejores-ciudades-espanolas-para-comer-sin-gluten
 - https://www.lanzadigital.com/provincia/ciudad-real/ciudad-real-bares-habitante/
+
 
 You can find here more [user stories](https://github.com/Stance4Health-Dev/docs/tree/master/user-stories) of the system, intented to get the prerequisites and needs of the future application.
 
