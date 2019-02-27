@@ -59,7 +59,7 @@ List of actions focused on passing the tests:
 
 
 ## Use Cases: Using Personas
-Personas bring us a tool that allows you to create models that represent a user or group of users focused on a specific activity. With the publication in 1998 of the book 'The Inmates Are Running the Asylum', [Alan Cooper](https://twitter.com/MrAlanCooper) begins his approach towards what we know as Personas today.
+Personas bring us a tool that allows to create models that represent a user or group of users focused on a specific activity. With the publication in 1998 of the book 'The Inmates Are Running the Asylum', [Alan Cooper](https://twitter.com/MrAlanCooper) begins his approach towards what we know as Personas today.
 Personas[4,5,6] is a practical way to design the interaction and user experience with the system. It is a good option when we have a complex design, since it allows to differentiate without ambiguities between the functionalities and requirements that are necessary and those that are not.
 Users tend to be divided according to three criteria:
 - Goals.
@@ -68,41 +68,40 @@ Users tend to be divided according to three criteria:
 
 Let's see an example of what a future user of the system could be, using Personas methodology:
 
-## Sofía Morales
+### Sofía Morales
 
-### Vital statistics
+#### Vital statistics
 24 years, Female, Puertollano, Spain
 
-### Diseases
+#### Diseases
 * Celiac
 
-### Job 
+#### Job 
 Nurse. Actually working with cancer patients.
 
 "Going out to have lunch or dinner limits me a lot, most of the restaurants I go are not prepared to offer a gluten-free menu and they have always doubts. So, I always bring my own bread, to be sure."
 
-### Devices
-Mobile Iphone / personal laptop
-
-### Links
-- http://www.infoceliaco.com/index.php/restaurantes/3338-clasifican-las-10-mejores-ciudades-espanolas-para-comer-sin-gluten
-- https://www.lanzadigital.com/provincia/ciudad-real/ciudad-real-bares-habitante/
-
-### Queries
+#### Queries
 * Usually she buys the same products that she already knows are gluten free.
 * Quick access to a database that allows to verify components of products.
 * Discover new recipes suitable for her
 * Notification of new free gluten restaurants.
 
-- You can find more [user stories](https://github.com/Stance4Health-Dev/docs/tree/master/user-stories) of the system, intented to get the prerequisites and needs of the future application.
+#### Devices
+Mobile Iphone / personal laptop
+
+#### Links
+- http://www.infoceliaco.com/index.php/restaurantes/3338-clasifican-las-10-mejores-ciudades-espanolas-para-comer-sin-gluten
+- https://www.lanzadigital.com/provincia/ciudad-real/ciudad-real-bares-habitante/
+
+You can find here more [user stories](https://github.com/Stance4Health-Dev/docs/tree/master/user-stories) of the system, intented to get the prerequisites and needs of the future application.
 
 [4] Cooper, A. 1999. The Inmates Are Running the Asylum,
 Indianapolis, Sams.
 [5] Cooper A., Reimann R., Cronin, D. 2007. About Face 3: The
 Essentials of Interaction Design. Indianapolis, Wiley.
 [6] Cooper A. 2003. The Origin of Personas. Retrieved June 12,
-2008, from http://www.cooper.com/journal/2003/08/the_
-origin_of_personas.html
+2008, from http://www.cooper.com/journal/2003/08/the_origin_of_personas.html
 
 
 ## Database
