@@ -72,31 +72,14 @@ Users tend to be divided according to three criteria:
 
 There are different criteria and ways to represent a future user, let's see an example:
 
-### Sofía Morales
-
-#### Vital statistics
-24 years, Female, Puertollano, Spain
-
-#### Diseases
-* Celiac
-
-#### Job 
-Nurse. Actually working with cancer patients.
-
-"Going out to have lunch or dinner limits me a lot, most of the restaurants I go are not prepared to offer a gluten-free menu and they have always doubts. So, I always bring my own bread, to be sure."
-
-#### Queries
-* Usually she buys the same products that she already knows are gluten free.
-* Quick access to a database that allows to verify components of products.
-* Discover new recipes suitable for her
-* Notification of new free gluten restaurants.
-
-#### Devices
-Mobile Iphone / personal laptop
-
-#### Links
-- http://www.infoceliaco.com/index.php/restaurantes/3338-clasifican-las-10-mejores-ciudades-espanolas-para-comer-sin-gluten
-- https://www.lanzadigital.com/provincia/ciudad-real/ciudad-real-bares-habitante/
+|        ![Alt text](http://icons.iconarchive.com/icons/icons8/windows-8/48/Users-Name-icon.png)    |                         	
+         Sofía Morales 	                         |
+|----------------|-------------------------------|
+|Vital statistics|24 years, Female, Puertollano, Spain           |
+|Diseases        |Celiac           				 |
+|Job          	 |Nurse. Actually working with cancer patients.	 |
+|Queries         | <ul><li>Usually she buys the same products that she already knows are gluten free.</li><li>Quick access to a database that allows to verify components of products.</li><li>Discover new recipes suitable for her</li><li>Notification of new free gluten restaurants</li></ul>  |
+|Links          	 |<ul><li>[Ranked the 10 best Spanish cities to eat gluten-free](http://www.infoceliaco.com/index.php/restaurantes/3338-clasifican-las-10-mejores-ciudades-espanolas-para-comer-sin-gluten)</li><li>[Ciudad Real [ESP] - Bars per inhabitant](https://www.lanzadigital.com/provincia/ciudad-real/ciudad-real-bares-habitante/)</i></ul>|
 
 
 You can find here more [user stories](https://github.com/Stance4Health-Dev/docs/tree/master/user-stories) of the system, intented to get the prerequisites and needs of the future application.
