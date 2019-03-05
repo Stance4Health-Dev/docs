@@ -16,12 +16,13 @@ This repository was created with the purpose of collecting information for the d
 ## How will be the development experience: Continuous Integration
 
 How are developers going to be organized to implement the system? using continuous integration.
-In a development based on continuous integration, the workers/developers who are implementing the system share their work together, pooling it in common with the rest of the members, in an **automatic** and **systematized** way.
-The development is continuous because each worker pools his work in common constantly, every time he fixes a bug, implements a new feature or some characteristic.
+In a development based on continuous integration, the workers/developers who are implementing the system share their work together, pooling it in common with the rest of the members, in an **automatic** and **systematized** way. The development is continuous because each worker pools his work in common constantly, every time he fixes a bug, implements a new feature or some characteristic.
+
 You can implement CI without using third-party tools, but it becomes very tedious. Because we need to take control of source code, manage the versions, perform unit tests, etc. For this there are services that can help us, such as the **git version control system**, which is what we use for the project. Then, thanks to its use, the development becomes systematized.
-The development of the project advances through changes, these changes are the modifications we make to the files within the version control system and  published later, **commit**, so the repository is updated. We can also bring the changes, that some of the members made, of the repository to have our workspace always updated.
-Git keeps information about what has been modified, who modified it, when it was modified and in some cases why it was modified. In this way, we have a history of all the changes that are presented in the project, allowing us to interact with the versions and go back if something went wrong.
+The development of the project advances through changes, these changes are the modifications we make to the files within the version control system and  published later, **commit**, so the repository is updated. We can also bring the changes, that some of the members made, of the repository to have our workspace always updated. Git keeps information about what has been modified, who modified it, when it was modified and in some cases why it was modified. In this way, we have a history of all the changes that are presented in the project, allowing us to interact with the versions and go back if something went wrong.
+
 What can we keep in a version control system? mainly the source code is saved, however it is not the only thing, we can store anything digital, for example images, icons, sound, videos, binary files, libraries, and even the same project documentation, from which you are reading.
+
 The git version control allows us to work on a copy of the main project, without connection, in local. This makes it much faster than other alternatives such as SVS, Perfoce or Mercurial, among others. For example, Mercurial uses commands that need the server to be completed, however, git can do a  **fetch** to get the repository information and then work offline, allowing comparisons **merge** and see the **logs** from your branch or from the rest of the branches of the repository, even if they do not belong to your local branches.
 
 ## Test-driven development: all code emerged is tested
