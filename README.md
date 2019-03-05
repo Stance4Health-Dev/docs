@@ -23,7 +23,7 @@ The development of the project advances through changes, these changes are the m
 
 What can we keep in a version control system? mainly the source code is saved, however it is not the only thing, we can store anything digital, for example images, icons, sound, videos, binary files, libraries, and even the same project documentation, from which you are reading.
 
-The git version control allows us to work on a copy of the main project, without connection, in local. This makes it much faster than other alternatives such as SVS, Perfoce or Mercurial, among others. For example, Mercurial uses commands that need the server to be completed, however, git can do a  **fetch** to get the repository information and then work offline, allowing comparisons **merge** and see the **logs** from your branch or from the rest of the branches of the repository, even if they do not belong to your local branches.
+The git version control allows us to work on a copy of the main project, without connection, in local. This makes it much faster than other alternatives such as SVN, Perforce or Mercurial, among others. For example, Mercurial uses commands that need the server to be completed, however, git can do a  **fetch** to get the repository information and then work offline, allowing comparisons **merge** and see the **logs** from your branch or from the rest of the branches of the repository, even if they do not belong to your local branches.
 
 ## Test-driven development: all code emerged is tested
 
