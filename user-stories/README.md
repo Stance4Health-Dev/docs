@@ -14,6 +14,6 @@ Contains the stories of the *persona*s that will use the Stance4Health data stor
 
 - [x] [Jerry Cimas](https://github.com/Stance4Health-Dev/docs/blob/master/user-stories/user-6.md), owner of a restaurant. He wants to improve the nutritional quality of the menus
 
-- [ ] [Karl Weber](https://github.com/Stance4Health-Dev/docs/blob/master/user-stories/user-7.md). He does stadistics about the comercial use of the application (when do people use the application, when do the people eat and so on).
+- [x] [Karl Weber](https://github.com/Stance4Health-Dev/docs/blob/master/user-stories/user-7.md). He does stadistics about the comercial use of the application (when do people use the application, when do the people eat and so on).
 
-- [ ] [Mila Becker](https://github.com/Stance4Health-Dev/docs/blob/master/user-stories/user-8.md). She does stadistics about the scientific base of the application (ingestes, menu suggestions and so on).
+- [x] [Mila Becker](https://github.com/Stance4Health-Dev/docs/blob/master/user-stories/user-8.md). She does stadistics about the scientific base of the application (ingestes, menu suggestions and so on).
