@@ -8,7 +8,6 @@ Woman, 34 years, German.
 
 She is specialized in statistical analysis.
 
-
 ## Devices
 
 Uses a desktop computer and smartphone.

@@ -1,9 +1,11 @@
 # Jerry Cimas
 
 ## Vital statistics
+
 37 years, Male, Springfield
 
 ## Job 
+
 Owner of a restaurant.
 
 "More and more people come asking if we have gluten-free menus, and the fact that we do not have it or that it is very scarce causes that, client and his  company, spend their money in another place."
