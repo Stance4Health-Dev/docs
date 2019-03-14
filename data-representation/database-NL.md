@@ -1,0 +1,140 @@
+# Netherlands database
+
+## Information about fields
+
+- 01001	- ENERC - Energie	- Energy: kcal	 
+- 01002	- ENERC - Energie - Energy: kJ
+- 02001	- NT - Stikstof totaal - Nitrogen total: g
+- 02002	- PROT - Eiwit totaal	- Protein total: g
+- 02003	- PROTPL - Eiwit plantaardig - Protein vegetable: g
+- 02004	- PROTAN - Eiwit dierlijk - Protein animal: g
+- 03001	- FAT	- Vet totaal - Fat total: g
+- 03002	- FACID	- Som van de vetzuren	- Fatty acids total: g
+- 03004	- FASAT	- Vetzuren totaal verzadigd	- Fatty acids total saturated: g
+- 03006	- FAMSCIS	- Vetzuren enkelv onverz cis - Fatty acids tot mono unsat cis: g
+- 03008	- FAPU	- Vetzuren meerv onverz	- Fatty acids total poly unsat: g
+- 03009	- F18:2CN6 - C18:2 n-6 cis (linolzuur)	- C18:2 n-6 cis (linoleic acid): g
+- 03010	- ACEAC	- C2:0 - C2:0: %
+- 03011	- F4:0 - C4:0 - C4:0 (Butyric acid) : %
+- 03012	- F6:0 - C6:0 - C6:0 (Caproic acid): %
+- 03013	- F8:0 - C8:0 - C8:0 (Caprylic acid): %
+- 03014	- F10:0	- C10:0 - C10:0 (Capric acid): %
+- 03015	- F10:1CIS - C10:1 cis totaal -  C10:1 cis total (Decenoic acid): %
+- 03016	- F11:0	- C11:0	- C11:0 (Undecylic acid): %
+- 03017	- F12:0	- C12:0	- C12:0 (Lauric acid): %
+- 03018	- F12:1CIS	- C12:1 cis totaal - C12:1 cis total (Lauroleic acid): %
+- 03019	- F13:0	- C13:0	- C13:0 (Tridecylic acid): %
+- 03020	- F14:0	- C14:0	- C14:0 (Myristic acid): %
+- 03021	- F14:1CIS - C14:1 cis totaal	- %	- C14:1 cis total (Myristoleic acid): %
+- 03022	- F14:1TRS - C14:1 trans totaal	- %	- C14:1 trans total: %
+- 03023	- F15:0	- C15:0	- %	- C15:0 (Pentadecylic acid): %
+- 03024	- F16:0	- C16:0	- %	- C16:0 (Palmitic acid): %
+- 03025	- F16:1CIS - C16:1 cis totaal - C16:1 cis total (Palmitoleic acid): %
+- 03026	- F16:1TRS - C16:1 trans totaal - C16:1 trans total: %
+- 03027	- F10:1TRS - C10:1 trans totaal - C10:1 trans total: %
+- 03028	- F17:0	- C17:0	- C17:0 (Margaric acid): %
+- 03029	- F18:0	- C18:0	- C18:0 (Stearic acid): %
+- 03030	- F18:1CIS - C18:1 cis totaal	- C18:1 cis total (Oleic acid): %
+- 03031	- F18:1TRS - C18:1 trans totaal	- C18:1 trans total (Elaidic acid): %
+- 03033	- F18:3CN3 - C18:3 n-3 cis (ALA) - C18:3 n-3 cis (ALA / Alpha-Linolenic acid): %
+- 03034	- F18:2CT	- C18:2 cis trans	-	C18:2 cis trans: %
+- 03035	- F19:0	- C19:0	- C19:0 (Nonadecylic acid): %
+- 03036	- F20:0	- C20:0	- C20:0 (Arachidic acid): %
+- 03037	- F20:1CIS - C20:1 cis totaal	- C20:1 cis total: %
+- 03038	- F20:2CN6 - C20:2 n-6 cis - C20:2 n-6 cis (Eicosadienoic acid): %
+- 03039	- F20:3CN3 - C20:3 n-3 cis - C20:3 n-3 cis: %
+- 03040	- F20:4CN6 - C20:4 n-6 cis - C20:4 n-6 cis (Arachidonic acid): %
+- 03041	- F20:5CN3	- C20:5 n-3 cis (EPA)	- C20:5 n-3 cis (EPA - Eicosapentaenoic acid): %
+- 03042	- F21:0	C21:0	- C21:0 (Heneicosylic acid): %
+- 03043	- F22:0	C22:0	- C22:0 (Behenic acid	): %
+- 03044	- F22:1CIS	- C22:1 cis totaal	- C22:1 cis total (Erucic acid): %
+- 03045	- F22:2CN3	- C22:2 n-3 cis	- C22:2 n-3 cis: %
+- 03046	- F22:3CN3	- C22:3 n-3 cis	- C22:3 n-3 cis: %
+- 03047	- F22:4CN6	- C22:4 n-6 cis	- C22:4 n-6 cis (Adrenic acid): %
+- 03048	- F22:5CN3	- C22:5 n-3 cis (DPA)	- C22:5 n-3 cis (DPA - Docosapentaenoic acid): %
+- 03049	- F22:6CN3	- C22:6 n-3 cis (DHA)	- C22:6 n-3 cis (DHA - Docosahexaenoic acid): %
+- 03052	- F18:2CN6	- C18:2 n-6 cis (linolzuur)	- C18:2 n-6 cis (linoleic acid): %
+- 03053	- F24:0	- C24:0	- C24:0 (Lignoceric acid): %
+- 03054	- F24:1CIS	- C24:1 cis totaal - C24:1 cis total (Nervonic acid): %
+- 03055	- F12:1TRS	- C12:1 trans totaal - C12:1 trans total: %
+- 03057	- F18:2R	- C18:2 overigen	- C18:2 rest: %
+- 03058	- F20:1TRS	- C20:1 trans totaal	- C20:1 trans total: %
+- 03059	- F22:1TRS	- C22:1 trans totaal	- C22:1 trans total: %
+- 03060	- F24:1TRS	- C24:1 trans totaal	- C24:1 trans total: %
+- 03061	- FAUN - Niet-geidentificeerde vetzuren	- Fatty acids unidentified: %
+- 03062	- F18:3CN6	- C18:3 n-6 cis	- C18:3 n-6 cis: %
+- 03065	- F18:2TTN6	- C18:2 n-6 trans	- C18:2 n-6 trans (Linolelaidic acid): %
+- 03089	- F18:4CN3	- C18:4 n-3 cis	- C18:4 n-3 cis (Stearidonic): %
+- 03090	- F20:4CN3	- C20:4 n-3 cis	- C20:4 n-3 cis: %
+- 03103	- F18:2CN9	- C18:2 n-9 cis	- C18:2 n-9 cis: %
+- 03104	- F20:3CN9	- C20:3 n-9 cis	- C20:3 n-9 cis (Mead acid): %
+- 03105	- F20:3CN6	- C20:3 n-6 cis	- C20:3 n-6 cis (Dihomo-γ-linolenic acid): %
+- 03106	- F22:2CN6	- C22:2 n-6 cis	- C22:2 n-6 cis: %
+- 03107	- F22:5CN6	- C22:5 n-6 cis	- C22:5 n-6 cis: %
+- 03108	- F23:0	- C23:0	- C23:0 (Tricosanoic acid): %
+- 03109	- F24:2CN6	- C24:2 n-6 cis	- C24:2 n-6 cis: %
+- 03113	- FAPUXR	- Movz rest c+t	- Pufa rest c+t: %
+- 03114	- FASATXR	- Verz vetz rest	- SFA rest: %
+- 03115	- FAMSCXR	- Eovz cis rest	- Mufa rest cis: %
+- 03116	- FAMSTXR	- Eovz trans rest	- Mufa rest trans: %
+- 03131	- F18:3TTTN3	- C18:3 n-3 trans	- C18:3 n-3 trans: %
+- 03133	- F20:2TT	- C20:2 n-6 trans	- C20:2 n-6 trans: %
+- 03134	- F25:0	- C25:0	- C25:0 (Pentacosylic acid / Pentacosanoic acid): %
+- 03135	- F26:0	- C26:0	- C26:0 (Cerotic acid / Hexacosanoic acid): %
+- 03136	- FATRS	- Vetzuren totaal trans	- Fatty acids total trans: g
+- 03138	- FAPUN3	- Vetzuren n-3 meerv onverz cis -	Pufa n-3 cis: g
+- 03139	- FAPUN6	- Vetzuren n-6 meerv onverz  cis -	Pufa n-6 cis: g
+- 03140	- F18:3CN3	- C18:3 n-3 cis (ALA)	- C18:3 n-3 cis (ALA - Alpha-Linolenic acid): g
+- 03141	- F20:5CN3	- C20:5 n-3 cis (EPA)	- C20:5 n-3 cis (EPA - Eicosapentaenoic acid): g
+- 03142	- F22:6CN3	- C22:6 n-3 cis (DHA)	- C22:6 n-3 cis (DHA - Docosahexaenoic acid): g
+- 04001	- CHORL	- Cholesterol	- Cholesterol: mg
+- 05001	- CHO	- Koolhydraten totaal	- Carbohydrates total: g
+- 05002	- SUGAR	- Mono en disacchariden totaal -	Mono and disccharides total: g
+- 05010	- STARCH	- Polysacchariden totaal	- Polysaccharides total: g
+- 05011	- POLYL	- Polyolen totaal	- Polyols total: g
+- 06001	- FIBT	- Voedingsvezel totaal - Dietary fibre total: g
+- 07001	- WATER	- Water -	Water: g
+- 08001	- ALC	- Alcohol totaal - Alcohol total: g
+- 09001	- CA	- Calcium	- Calcium: mg
+- 09002	- P	- Fosfor	- Phosphorus: mg
+- 09003	- FE	- IJzer totaal	- Iron total: mg
+- 09004	- HAEM	- IJzer haem	- Iron haem: mg
+- 09005	- NHAEM	- IJzer non haem	- Iron non haem: mg
+- 09006	- NA	- Natrium	- Sodium: mg
+- 09007	- K	- Kalium	- Potassium: mg
+- 09008	- MG	- Magnesium	- Magnesium: mg
+- 09009	- ZN	- Zink	- Zinc: mg
+- 10001	- SE	- Selenium	- Selenium: ug
+- 10002	- CU	- Koper	- Copper: mg
+- 10003	- ID	- Jodium	- Iodine: ug
+- 11001	- RETOL	- Retinol	- Retinol: ug
+- 11002	- VITA	- Retinol equivalenten (RE)	- Retinol equivalents: ug
+- 11003	- CARTBTOT	- Beta-caroteen	- Beta-carotene: ug
+- 11005	- THIA	- Vitamine B1	- Vitamin B1: mg
+- 11006	- RIBF	- Vitamine B2	- Vitamin B2: mg
+- 11007	- VITB6	- Vitamine B6	- Vitamin B6: mg
+- 11008	- VITB12	- Vitamine B12	- Vitamin B12: ug
+- 11009	- VITD	- Vitamine D totaal	-  Vitamin D total: ug
+- 11010	- VITE	- Vitamine E totaal	- Vitamin E total: mg
+- 11011	- VITC	- Vitamine C	-  Vitamin C: mg
+- 11012	- FOLFD	- Folaat	- Folates: ug
+- 11013	- FOLAC	- Foliumzuur	- Folic acid: ug
+- 11014	- NIA	- Nicotinezuur	- Niacin: mg
+- 11015	- TOCPHA	- Alfa-tocoferol	- Alpha-tocoferol: mg
+- 11016	- TOCPHB	- Beta-tocoferol	- Beta-tocoferol: mg
+- 11017	- TOCPHG	- Gamma-tocoferol	- Gamma-tocoferol: mg
+- 11018	- TOCPHD	- Delta-tocoferol	- Delta-tocoferol: mg
+- 11019	- CHOCALOH	- 25-hydroxy-vitamine D	- 25-hydroxy-vitamin D: ug
+- 11020	- CARTA	- Alfa-caroteen	- Alpha-carotene: ug
+- 11021	- LUTN	- Luteine	- Lutein: ug
+- 11022	- ZEA	- Zeaxanthine	- Zeaxanthin: ug
+- 11023	- CRYPXB	- Beta-cryptoxanthine	- Beta-cryptoxanthin: ug
+- 11024	- LYCPN	- Lycopeen	- Lycopene: ug
+- 11027	- VITA	- Retinol activiteit equiv.(RAE)	- Retinol activity equivalents: ug
+- 11028	- FOL	- Folaat equivalenten	- Total dietary folate equiv.: ug
+- 11035	- VITK	- Vitamine K totaal	- Vitamin K total: ug
+- 11036	- VITK1	Vitamine K1	- Vitamin K1: ug
+- 11038	- VITK2	- Vitamine K2	- Vitamin K2: ug
+- 11046	- CHOCAL	- Cholecalciferol - vit D3	- Cholecalciferol - vit D3: ug
+- 12001	- ASH	- As	- Ash: g
+- 13006	- OA	- Organische zuren totaal	- Organic acid total: g
