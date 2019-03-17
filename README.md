@@ -1,4 +1,18 @@
+## Index
+- [Abstract](#Abstract)
+- [How will be the development experience](#Continuous-Integration)
+- [Test-driven development](#Test-driven-development)
+  * [Using Travis CI](#Using-Travis-CI)
+  * [Battery of tests](#Battery-of-tests)
+  * [Classic vulnerabilities](#Some-classic-vulnerabilities-to-consider)
+- [Python as data management](#Python-as-data-management)
+  * [Python 2.x vs 3.x](#Python-2.x-vs-3.x)
+- [Use Cases: Using Personas](#Using-Personas)
+- [Database](#Database)
+  * [Graph Database](#Graph-Database)
+  * [Migration](#Migration)
 
+<a name="Abstract"/>
 
 ## Abstract
 
@@ -13,7 +27,11 @@ In this document you can see how the project is being implemented, what technolo
 how the data will be treated in terms of management and migration.
 This repository was created with the purpose of collecting information for the development of Stance4Health.  
 
-## How will be the development experience: Continuous Integration
+➤ [Index](#Index)
+
+<a name="Continuous-Integration"/>
+
+## How will be the development experience: Continuous Integration (CI)
 
 How are developers going to be organized to implement the system? using continuous integration.
 In a development based on continuous integration, the workers/developers who are implementing the system share their work together, pooling it in common with the rest of the members, in an **automatic** and **systematized** way. The development is continuous because each worker pools his work in common constantly, every time he fixes a bug, implements a new feature or some characteristic.
@@ -23,7 +41,11 @@ The development of the project advances through changes, these changes are the m
 
 What can we keep in a version control system? mainly the source code is saved, however it is not the only thing, we can store anything digital, for example images, icons, sound, videos, binary files, libraries, and even the same project documentation, from which you are reading.
 
-The git version control allows us to work on a copy of the main project, without connection, in local. This makes it much faster than other alternatives such as SVN, Perforce or Mercurial, among others. For example, Mercurial uses commands that need the server to be completed, however, git can do a  **fetch** to get the repository information and then work offline, allowing comparisons **merge** and see the **logs** from your branch or from the rest of the branches of the repository, even if they do not belong to your local branches.
+The git version control allows us to work on a copy of the main project, without connection, in local. This makes it much faster than other alternatives such as Subversion (SVN), Perforce or Mercurial, among others. For example, Mercurial uses commands that need the server to be completed, however, git can do a  **fetch** to get the repository information and then work offline, allowing comparisons **merge** and see the **logs** from your branch or from the rest of the branches of the repository, even if they do not belong to your local branches.
+
+➤ [Index](#Index)
+
+<a name="Test-driven-development"/>
 
 ## Test-driven development: all code emerged is tested
 
@@ -56,22 +78,28 @@ List of actions focused on passing the tests:
 - SQL injection: unauthorized requests to databases.
 - XSS: injection of malicious javascritp code. Ex: web based applications.
 
+➤ [Index](#Index)
+
 ## Python as data management
 
 The system needs to handle a lot of information constantly, therefore, we have chosen the Python programming language as the main development language. Python is an interpreted language, slower than others, like C ++, but you only need one interpreter to run it, which makes it cross-platform. In addition, it comes pre-installed in many systems like Linux or Mac.
 It is multi-paradigm, unlike other languages ​​such as [R](https://www.r-project.org/), can be oriented to different needs, such as object-oriented programming, modular development, functional programming and scripts. These scripts can be used for system administration tasks, tests, correction of errors and direct interaction with the database, among other usefull uses.
 
-It is opensource and is supported by a large community that continues to develop libraries and modules that facilitate our work. Many of these
-libraries are oriented to massive data computing ([Awesome Python](https://github.com/vinta/awesome-python)).
-
-Python has a very broad and easy to read syntax, similar to pseudocode. It allows to easily manipulate data in a table way.
-It is not necessary to declare the type of variable, depending on the content that a variable takes, it is of one type or another, this gives more flexibility when it comes to processing different types of data.
-
+It is opensource and is supported byabstract a large community that continues to develop libraries and modules that facilitate our work. Many of these
+libraries are oriented to massive daabstractta computing ([Awesome Python](https://github.com/vinta/awesome-python)).
+abstract
+Python has a very broad and easy to abstractread syntax, similar to pseudocode. It allows to easily manipulate data in a table way.
+It is not necessary to declare the tabstractype of variable, depending on the content that a variable takes, it is of one type or another, this gives more flexibility when it comes to processing differenabstractt types of data.
+abstract
 ### Python 2.x vs 3.x
 
 Both versions are incompatible, so we have chosen version 3.x for the development because it is the most recent version (3.6 2016) compared to
-the latest version 2.x (2.7 2010), which will also no longer have support next year.
+the latest version 2.x (2.7 20Database10), which will also no longer have support next year.
 Most of the 2.x libraries are already available in 3.x, in the following [link](https://python3wos.appspot.com/) we can see some of those that are not available in red color.
+
+➤ [Index](#Index)
+
+<a name="Using-Personas"/>
 
 ## Use Cases: Using Personas
 Personas bring us a tool that allows to create models that represent a user or group of users focused on a specific activity. With the publication in 1998 of the book 'The Inmates Are Running the Asylum', [Alan Cooper](https://twitter.com/MrAlanCooper) begins his approach towards what we know as Personas today.
@@ -102,14 +130,11 @@ Essentials of Interaction Design. Indianapolis, Wiley.
 [6] Cooper A. 2003. The Origin of Personas. Retrieved June 12,
 2008, from http://www.cooper.com/journal/2003/08/the_origin_of_personas.html
 
+➤ [Index](#Index)
 
 ## Database
 
-> Developing..
 
-- Sources: idioma y licencia.
-- Migracion: como obtenemos los datos, que medios usamos, como los almacenamos.
-- Standard: SPN, Nutricion inteligente Personalizada
 
 At the moment, you can find information about:
 
@@ -130,3 +155,6 @@ Reglamento (UE) 1169/2011 [.pdf](https://www.boe.es/doue/2011/304/L00018-00063.p
 - Tablas Expresión y representación de los nutrientes.
 - Tablas factor de conversión para cálculo energético por nutriente.
 - Dieta ideal 2000kcal dividido en nutrientes.
+
+
+➤ [Index](#Index)
