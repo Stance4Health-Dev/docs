@@ -134,7 +134,18 @@ Essentials of Interaction Design. Indianapolis, Wiley.
 
 ## Database
 
+The industry started to store data in relational databases like SQL (in 1970 by IBM) and in human readable tables like Excell (in 1985 by Microsoft).
+Relational Databases use a ledger-style representation and come with a key feature. We can identify each piece of data using the primary key (sometimes auto-generated) and get relationships with other pieces using the foreign keys. 
 
+In the current time, there has been a data explotion, petabytes and exabytes, known as Big Data. We can store it in disk, but, how we interact with all of this data? how we managment this big volume of primary and foreign keys? 
+Although we continue to use them with the next versions, they are based on the initial scheme. So, these first tools are not suitable for these needs. But we still need to store all this information in a system where relationships play a crucial role. Innovation reappeared and databases based on graphs emerged.
+ 
+### Graph Database
+
+> Developing
+Why is it better to use a graph database for our system? What does it solve?
+what are their characteristics? How is built? How is it interacted?
+What are the disadvantages?
 
 At the moment, you can find information about:
 
