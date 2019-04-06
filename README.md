@@ -216,13 +216,12 @@ The two main paradigms of database query languages are imperative and declarativ
 Imperative query languages are used to describe how you want something done specifically. Step-by step manner, the sequence and wording of each line of code plays a critical role.
 imperative database query languages can also be limiting and not very user-friendly, requiring an extensive knowledge of the language and deep technical understanding of physical 
 implementation details prior to usage. Writing one part incorrectly creates faulty outcomes.
-Example: Cypher(Neo4j)
+Example: Gremlin, GraphQL (Neo4J-GraphQL integration Simplifying Data-Intensive Development 2019)    
 
 #### Declarative Query Languages
 Declarative query languages let users express what data to retrieve, letting the engine underneath take care of seamlessly retrieving it, rather than the specifics on how to complete it.
 Using a declarative database query language may also result in better code than what can be created manually, and it is usually easier to understand the purpose of the code written in a declarative language.
-Example: Gremlin, GraphQL (Neo4J-GraphQL integration Simplifying Data-Intensive Development 2019)    
-
+Example: Cypher(Neo4j), Gremlin
 
 ### Database objects
 The objects/nodes of the graph represent the real world objects that we want to digitize and store. 
