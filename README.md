@@ -140,12 +140,165 @@ Relational Databases use a ledger-style representation and come with a key featu
 In the current time, there has been a data explotion, petabytes and exabytes, known as Big Data. We can store it in disk, but, how we interact with all of this data? how we managment this big volume of primary and foreign keys? 
 Although we continue to use them with the next versions, they are based on the initial scheme. So, these first tools are not suitable for these needs. But we still need to store all this information in a system where relationships play a crucial role. Innovation reappeared and databases based on graphs emerged.
  
-### Graph Database
+## Graph Database
 
+The base idea of graph database is that any data that we already know and store, already have a relational structure, and it is easy to be represented in graph way, like a social network.
+The whiteboard model is the physical model, what you draw in the whiteboard to represent the data model, is represented on disk in the exact same way using graphs. What  perhaps  differentiates graphs from many other data  
+modeling  techniques,  however,  is  the  close  affinity between the  logical  and  physical  models. The  interesting  thing  about  graph  diagrams  is  that  they  tend  to  contain specific instances  of  
+nodes  and  relationships,  rather  than  classes  or  archetypes.
+
+There are three dominant graph data models: the labeled  property  graph, hypergraphs (this model allows any number of nodes at either end of a relationship) and Resource Description Framework (RDF) triples by W3C.
+
+For this project we will develop the labeled property graph. This model has the following characteristics:
+    • It contains nodes, relationships, properties, and labels.
+    • Nodes contain properties (key-value pairs).
+    • Nodes can be labeled with one or more labels.
+    • Relationships are named and directed, and always have a start and end node.
+    • Relationships can also contain properties.
+
+Let's make an example to understand the characteristics above:
+In the next image we can see a graph with two nodes, one a "ingredient/food" type (label 0), and being more specific, the label 1 say us that is an "onion" object. The second object is a "nutrient" type (label 0), being more specific, it is a "vitamin" (label 1) with the name "C" (label 2). We have both nodes well defined with their labels and determinated properties. In terms of relationships, the object "onion" starts an edge that ends in "vitamin" "C" node with the relationship name "contains" with a value equeal to 19, that gives us the total amount of "vitamin" "C" in the onion object. Then, according to the assigned value we can know if the amount of vitamine C is important or significant, always according to the business logic.
+The second relationship starts in zinq node and ends in apple node, it has the relationship name "make up", and gives us the certainty/relationship that zinq is part of the apple.
+
+![Graph example](https://github.com/Stance4Health-Dev/docs/tree/master/img/exampleGraph.png "Graph example")
+
+### Use cases/goals when devs want evaluate databases:
+
+- Flexibility: Mean a way to create and maintain your data in a logical wey.  No just translation from code into database calls, also translation between the business logic describing the applications requirements,
+and the developers satisfyong those requeriments. The  flexibility  of  the  graph  model  allow  us  to  add  new nodes and new relationships without compromising the existing network or migrating data from the original data and its intent remain intact.
+Because of the graph model’s flexibility, we don’t have to model our domain in exhaustive detail ahead of time a practice that is all but foolhardy in the face of changing business requirements. The additive nature of graphs also means we tend to perform fewer migrations, thereby
+reducing maintenance overhead and risk.
+
+- Perfomance: In contrast to relational databases, where join-intensive query performance deteriorates as the dataset gets bigger, with a graph database performance tends to remain relatively constant, even as the dataset grows. 
+This is because queries are localized to a portion of the graph. As a result, the execution time for each query is proportional only to the size of the part of the graph traversed to satisfy that query,
+rather than the size of the overall graph.
+
+- Agility: they are schema free, graph databases lack the kind of schema-oriented data governance mechanisms we’re familiar with in the relational world. But this is not a risk, rather, 
+it calls forth a far more visible and actionable kind of governance. Agility is another measure of speed. How easy and quickly can your code adapt to changing business? graph databases 
+are in step with changing business environments.
+
+## Native graph technology //https://neo4j.com/blog/native-vs-non-native-graph-technology/
+
+### Native graph storage
+Some graph databases use native graph storage that is optimized and designed for storing and managing graphs. The benefit of native graph storage is that its purpose-built stack 
+is engineered for performance and scalability. Unlike non-native  graph  storage, it  typically  depends  on  a  mature  non-graph  backend  (such  as  MySQL) whose  production  
+characteristics  are  well  understood  by  common operations teams. This non-native approach leads to latent results as their storage layer is not optimized for graphs. 
+
+### Native graph processing
+Others graph databases use index-free adjacency, meaning that connected nodes physically “point” to each other in the database. Native  graph  processing  (index-free  adjacency) 
+benefits  traversal  performance,  but  at  the  expense  of  making  some queries that don’t use traversals difficult or memory intensive.
+In common databases, traversing  the  graphs remains  expensive,  because  each  operation (Create, Read, Update, and Delete - CRUD) requires  an  index  lookup.  This  is  because  aggregates (like in SQL)  have  no notion  
+of  locality,  unlike  graph  databases,  which  naturally  provide the index-free adjacency. This  substantial  cost  is  amplified  when  it  comes  to  traversing  deeper  
+than  just  one hop/search. Friends are easy enough, but imagine trying to compute in real time friends-of-friends(depth 2), or friends-of-friends-of-friends(depth 3). 
+It will be slow because of the number of index lookups involved. Again, graphs use index-free adjacency to ensure that traversing connected data is extremely rapid.
+Graph databases can carry out a series of operations, Create, Read, Update, and Delete (CRUD) methods that expose the graph data model.
+
+#### How the performance of traversing changes with the size of the dataset
+A graph database provides a constant order search for queries. In our case, we simply find the node in the graph that represents the object "apple" that is an "ingredient"/"food" type, and then we follow the incoming 
+nutrient relationships, these relationships lead to nodes that represent "nutrient" that "make up" the object "apple".
+This is far cheaper than brute-forcing the result because it considers far fewer members of the network, that is, it considers only those that are connected to "apple". Of course, if all nutrients make up the "apple" object, 
+we’ll still end up considering the entire dataset.
+
+Ex. Finding extended friends in a relational database versus efficient finding in Neo4j. Source: [Graph Databases, OReilly](https://www.oreilly.com/library/view/graph-databases/9781449356255/)
+| Depth | DBMS exec time | Neo4j exec time | Dataset |
+|-------|-----------------|-----------------|---------|
+| 2     | 0.016           | 0.01            | ~2500   |   
+| 3     | 30.267          | 0.168           | ~110000 |   
+| 4     | 1543.505        | 1.359           | ~600000 |   
+| 5     | Unfinished      | 2.132           | ~800000 |  
+
+### Query language      // https://neo4j.com/blog/imperative-vs-declarative-query-languages/
+Diagrams are great for describing graphs outside of any technology context, but when it comes to using a database,  we  need  some  other  mechanism  for  creating,  manipulating,  and  querying data. We need a query language.
+The two main paradigms of database query languages are imperative and declarative languages.
+
+#### Imperative Query Languages
+Imperative query languages are used to describe how you want something done specifically. Step-by step manner, the sequence and wording of each line of code plays a critical role.
+imperative database query languages can also be limiting and not very user-friendly, requiring an extensive knowledge of the language and deep technical understanding of physical 
+implementation details prior to usage. Writing one part incorrectly creates faulty outcomes.
+Example: Cypher(Neo4j)
+
+#### Declarative Query Languages
+Declarative query languages let users express what data to retrieve, letting the engine underneath take care of seamlessly retrieving it, rather than the specifics on how to complete it.
+Using a declarative database query language may also result in better code than what can be created manually, and it is usually easier to understand the purpose of the code written in a declarative language.
+Example: Gremlin, GraphQL (Neo4J-GraphQL integration Simplifying Data-Intensive Development 2019)    // https://neo4j.com/news/graphql-neo4j-grand-stack/
+
+
+### Database objects
+The objects/nodes of the graph represent the real world objects that we want to digitize and store. 
+For our feed database we distinguish the following basic objects:
+
+Menu Object: set of recipes that together form a menu. 
+| Labels | Properties                                     |
+|--------|------------------------------------------------|
+| Menu   | Name: menu_name                                |
+|        | Type: [breakfast, lunch, snack, dinner, other] |
+|        | Price aprox: _ €                               |
+
+
+Recipe object: is a tutorial with a set of ingredients and properties that make up a recipe.
+| Labels      | Properties        |
+|-------------|-------------------|
+| Recipe      | Name: recipe_name |
+| Recipe_name | Tutorial: string  |
+|             | Cooking time: min |
+|             | Country: _        |
+
+
+Ingredient object: it is the food itself. Any product of the supermarket, anything that is attributed to nutritional values is considered an ingredient/food.
+| Labels                          | Properties                |
+|---------------------------------|---------------------------|
+| Ingredient/food_product         | Energy: _ kcal            |
+| Ingredient_name/commercial_name | cholesterol: _ mg         |
+|                                 | Unit: _                   |
+|                                 | Quantity: _                 |
+|                                 | State: [solid,liquid,gas] |
+|                                 | Alcohol: _ mg             |
+
+Nutrient object: There are many types and variants of nutrients, but we are not going to break down nutrients into more atomic components. 
+| Labels                         | Properties |
+|--------------------------------|------------|
+| Nutrient                       | Unit:_     |
+| Nutrient_type (nutrients_type.txt) | Source:_   |
+| Nutrient_name                  |            |
+
+Aditive object: Non-nutritive contribution. There are many types and variants of aditives.
+| Labels                           | Properties |
+|----------------------------------|------------|
+| Aditive                          | Unit:_     |
+| Aditive_type(aditives-types.txt) | Source:_   |
+| Aditive_name                     |            |
+
+The properties of each object above are not definitive, you can eliminate and add new properties without interfering with the operation of the graph. This 
+leaves us open a wide range of possibilities and variants within the same database.
+
+//https://www.fda.gov/Food/IngredientsPackagingLabeling/FoodAdditivesIngredients/ucm094211.htm
+
+
+Lists of different types of data:
+    - aditives.txt
+    - nutrients.txt
+    - vitamins.txt
+    - minerals.txt
+    - aminoacids.txt
+    - fatty-acids-saturated.txt
+    - fatty-acids-unsatured.txt
+    - countries.txt
+
+### Database relationships
+The relational edges represent the relationship between the objects/nodes.
+For our feed database we distinguish the following basic relationship labels:
+| Labels  | Meaning                          |
+|---------|----------------------------------|
+| Contain | Carry or have [something] inside |
+| Compose | Be part of something             |
+| . . .   | . . .                            |
+These labels are what allow us to traverse the graph respecting the coherence and logic of the business. More labels are 
+added to the list as new relationships appear, the inclusion of new objects fosters new relationships.
+
+
+#### Improving relationships
+[Probabilistic Label Relation Graphs with Ising Models](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Ding_Probabilistic_Label_Relation_ICCV_2015_paper.pdf)
 > Developing
-Why is it better to use a graph database for our system? What does it solve?
-what are their characteristics? How is built? How is it interacted?
-What are the disadvantages?
 
 At the moment, you can find information about:
 
