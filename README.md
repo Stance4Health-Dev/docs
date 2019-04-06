@@ -11,6 +11,7 @@
 - [Database](#Database)
   * [Graph Database](#Graph-Database)
   * [Migration](#Migration)
+- [References](#References)
 
 <a name="Abstract"/>
 
@@ -37,7 +38,7 @@ How are developers going to be organized to implement the system? using continuo
 In a development based on continuous integration, the workers/developers who are implementing the system share their work together, pooling it in common with the rest of the members, in an **automatic** and **systematized** way. The development is continuous because each worker pools his work in common constantly, every time he fixes a bug, implements a new feature or some characteristic.
 
 You can implement CI without using third-party tools, but it becomes very tedious. Because we need to take control of source code, manage the versions, perform unit tests, etc. For this there are services that can help us, such as the **git version control system**, which is what we use for the project. Then, thanks to its use, the development becomes systematized.
-The development of the project advances through changes, these changes are the modifications we make to the files within the version control system and  published later, **commit**, so the repository is updated. We can also bring the changes, that some of the members made, of the repository to have our workspace always updated. Git keeps information about what has been modified, who modified it, when it was modified and in some cases why it was modified. In this way, we have a history of all the changes that are presented in the project, allowing us to interact with the versions and go back if something went wrong.
+The development of the project advances through changes, these changes are the modifications we make to the files within the version control system and  published later, **commit**, so the repository is updated. We can also bring the changes, that some of the members made of the repository to have our workspace always updated. Git keeps information about what has been modified, who modified it, when it was modified and in some cases why it was modified. In this way, we have a history of all the changes that are presented in the project, allowing us to interact with the versions and go back if something went wrong.
 
 What can we keep in a version control system? mainly the source code is saved, however it is not the only thing, we can store anything digital, for example images, icons, sound, videos, binary files, libraries, and even the same project documentation, from which you are reading.
 
@@ -85,16 +86,16 @@ List of actions focused on passing the tests:
 The system needs to handle a lot of information constantly, therefore, we have chosen the Python programming language as the main development language. Python is an interpreted language, slower than others, like C ++, but you only need one interpreter to run it, which makes it cross-platform. In addition, it comes pre-installed in many systems like Linux or Mac.
 It is multi-paradigm, unlike other languages ​​such as [R](https://www.r-project.org/), can be oriented to different needs, such as object-oriented programming, modular development, functional programming and scripts. These scripts can be used for system administration tasks, tests, correction of errors and direct interaction with the database, among other usefull uses.
 
-It is opensource and is supported byabstract a large community that continues to develop libraries and modules that facilitate our work. Many of these
-libraries are oriented to massive daabstractta computing ([Awesome Python](https://github.com/vinta/awesome-python)).
-abstract
+It is opensource and is supported by a large community that continues to develop libraries and modules that facilitate our work. Many of these
+libraries are oriented to massive data computing ([Awesome Python](https://github.com/vinta/awesome-python)).
+
 Python has a very broad and easy to abstractread syntax, similar to pseudocode. It allows to easily manipulate data in a table way.
-It is not necessary to declare the tabstractype of variable, depending on the content that a variable takes, it is of one type or another, this gives more flexibility when it comes to processing differenabstractt types of data.
-abstract
+It is not necessary to declare the type of a variable, depending on the content that a variable takes, it is of one type or another, this gives more flexibility when it comes to processing differenabstractt types of data.
+
 ### Python 2.x vs 3.x
 
 Both versions are incompatible, so we have chosen version 3.x for the development because it is the most recent version (3.6 2016) compared to
-the latest version 2.x (2.7 20Database10), which will also no longer have support next year.
+the latest version 2.x (2.7 2010), which will also no longer have support next year.
 Most of the 2.x libraries are already available in 3.x, in the following [link](https://python3wos.appspot.com/) we can see some of those that are not available in red color.
 
 ➤ [Index](#Index)
@@ -143,9 +144,7 @@ Although we continue to use them with the next versions, they are based on the i
 ## Graph Database
 
 The base idea of graph database is that any data that we already know and store, already have a relational structure, and it is easy to be represented in graph way, like a social network.
-The whiteboard model is the physical model, what you draw in the whiteboard to represent the data model, is represented on disk in the exact same way using graphs. What  perhaps  differentiates graphs from many other data  
-modeling  techniques,  however,  is  the  close  affinity between the  logical  and  physical  models. The  interesting  thing  about  graph  diagrams  is  that  they  tend  to  contain specific instances  of  
-nodes  and  relationships,  rather  than  classes  or  archetypes.
+The whiteboard model is the physical model, what you draw in the whiteboard to represent the data model, is represented on disk in the exact same way using graphs. What  perhaps  differentiates graphs from many other data modeling  techniques,  however,  is  the  close  affinity between the  logical  and  physical  models. The  interesting  thing  about  graph  diagrams  is  that  they  tend  to  contain specific instances  of nodes  and  relationships,  rather  than  classes  or  archetypes.
 
 There are three dominant graph data models: the labeled  property  graph, hypergraphs (this model allows any number of nodes at either end of a relationship) and Resource Description Framework (RDF) triples by W3C.
 
@@ -157,12 +156,13 @@ For this project we will develop the labeled property graph. This model has the 
 + Relationships can also contain properties.
 
 Let's make an example to understand the characteristics above:
+
 In the next image we can see a graph with two nodes, one a "ingredient/food" type (label 0), and being more specific, the label 1 say us that is an "onion" object. The second object is a "nutrient" type (label 0), being more specific, it is a "vitamin" (label 1) with the name "C" (label 2). We have both nodes well defined with their labels and determinated properties. 
 
 In terms of relationships, the object "onion" starts an edge that ends in "vitamin" "C" node with the relationship name "contains" with a value equeal to 19, that gives us the total amount of "vitamin" "C" in the onion object. Then, according to the assigned value we can know if the amount of vitamine C is important or significant, always according to the business logic.
 The second relationship starts in zinq node and ends in apple node, it has the relationship name "make up", and gives us the certainty/relationship that zinq is part of the apple.
 
-![Graph example](https://github.com/Stance4Health-Dev/docs/blob/master/img/exampleGraph.png)
+![Graph example](https://github.com/Stance4Health-Dev/docs/blob/master/img/graph-example.png)
 
 ### Use cases/goals when devs want evaluate databases:
 
@@ -189,9 +189,7 @@ characteristics  are  well  understood  by  common operations teams. This non-na
 ### Native graph processing
 Others graph databases use index-free adjacency, meaning that connected nodes physically “point” to each other in the database. Native  graph  processing  (index-free  adjacency) 
 benefits  traversal  performance,  but  at  the  expense  of  making  some queries that don’t use traversals difficult or memory intensive.
-In common databases, traversing  the  graphs remains  expensive,  because  each  operation (Create, Read, Update, and Delete - CRUD) requires  an  index  lookup.  This  is  because  aggregates (like in SQL)  have  no notion  
-of  locality,  unlike  graph  databases,  which  naturally  provide the index-free adjacency. This  substantial  cost  is  amplified  when  it  comes  to  traversing  deeper  
-than  just  one hop/search. Friends are easy enough, but imagine trying to compute in real time friends-of-friends(depth 2), or friends-of-friends-of-friends(depth 3). 
+In common databases, traversing  the  graphs remains  expensive,  because  each  operation (Create, Read, Update, and Delete - CRUD) requires  an  index  lookup.  This  is  because  aggregates (like in SQL)  have  no notion of locality,  unlike  graph  databases,  which  naturally  provide the index-free adjacency. This  substantial  cost  is  amplified  when  it  comes  to  traversing  deeper than  just  one hop/search. Friends are easy enough, but imagine trying to compute in real time friends-of-friends(depth 2), or friends-of-friends-of-friends(depth 3). 
 It will be slow because of the number of index lookups involved. Again, graphs use index-free adjacency to ensure that traversing connected data is extremely rapid.
 Graph databases can carry out a series of operations, Create, Read, Update, and Delete (CRUD) methods that expose the graph data model.
 
