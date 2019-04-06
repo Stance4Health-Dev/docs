@@ -150,11 +150,11 @@ nodes  and  relationships,  rather  than  classes  or  archetypes.
 There are three dominant graph data models: the labeled  property  graph, hypergraphs (this model allows any number of nodes at either end of a relationship) and Resource Description Framework (RDF) triples by W3C.
 
 For this project we will develop the labeled property graph. This model has the following characteristics:
-    • It contains nodes, relationships, properties, and labels.
-    • Nodes contain properties (key-value pairs).
-    • Nodes can be labeled with one or more labels.
-    • Relationships are named and directed, and always have a start and end node.
-    • Relationships can also contain properties.
++ It contains nodes, relationships, properties, and labels.
++ Nodes contain properties (key-value pairs).
++ Nodes can be labeled with one or more labels.
++ Relationships are named and directed, and always have a start and end node.
++ Relationships can also contain properties.
 
 Let's make an example to understand the characteristics above:
 In the next image we can see a graph with two nodes, one a "ingredient/food" type (label 0), and being more specific, the label 1 say us that is an "onion" object. The second object is a "nutrient" type (label 0), being more specific, it is a "vitamin" (label 1) with the name "C" (label 2). We have both nodes well defined with their labels and determinated properties. In terms of relationships, the object "onion" starts an edge that ends in "vitamin" "C" node with the relationship name "contains" with a value equeal to 19, that gives us the total amount of "vitamin" "C" in the onion object. Then, according to the assigned value we can know if the amount of vitamine C is important or significant, always according to the business logic.
@@ -278,14 +278,14 @@ The properties of each object above are not definitive, you can eliminate and ad
 leaves us open a wide range of possibilities and variants within the same database.
 
 Lists of different types of data:
-    - aditives.txt
-    - nutrients.txt
-    - vitamins.txt
-    - minerals.txt
-    - aminoacids.txt
-    - fatty-acids-saturated.txt
-    - fatty-acids-unsatured.txt
-    - countries.txt
++ aditives.txt
++ nutrients.txt
++ vitamins.txt
++ minerals.txt
++ aminoacids.txt
++ fatty-acids-saturated.txt
++ fatty-acids-unsatured.txt
++ countries.txt
 
 ### Database relationships
 The relational edges represent the relationship between the objects/nodes.
