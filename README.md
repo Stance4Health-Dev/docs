@@ -157,10 +157,12 @@ For this project we will develop the labeled property graph. This model has the 
 + Relationships can also contain properties.
 
 Let's make an example to understand the characteristics above:
-In the next image we can see a graph with two nodes, one a "ingredient/food" type (label 0), and being more specific, the label 1 say us that is an "onion" object. The second object is a "nutrient" type (label 0), being more specific, it is a "vitamin" (label 1) with the name "C" (label 2). We have both nodes well defined with their labels and determinated properties. In terms of relationships, the object "onion" starts an edge that ends in "vitamin" "C" node with the relationship name "contains" with a value equeal to 19, that gives us the total amount of "vitamin" "C" in the onion object. Then, according to the assigned value we can know if the amount of vitamine C is important or significant, always according to the business logic.
+In the next image we can see a graph with two nodes, one a "ingredient/food" type (label 0), and being more specific, the label 1 say us that is an "onion" object. The second object is a "nutrient" type (label 0), being more specific, it is a "vitamin" (label 1) with the name "C" (label 2). We have both nodes well defined with their labels and determinated properties. 
+
+In terms of relationships, the object "onion" starts an edge that ends in "vitamin" "C" node with the relationship name "contains" with a value equeal to 19, that gives us the total amount of "vitamin" "C" in the onion object. Then, according to the assigned value we can know if the amount of vitamine C is important or significant, always according to the business logic.
 The second relationship starts in zinq node and ends in apple node, it has the relationship name "make up", and gives us the certainty/relationship that zinq is part of the apple.
 
-![Graph example](https://github.com/Stance4Health-Dev/docs/tree/master/img/exampleGraph.png "Graph example")
+![Graph example](https://github.com/Stance4Health-Dev/docs/blob/master/img/exampleGraph.png)
 
 ### Use cases/goals when devs want evaluate databases:
 
