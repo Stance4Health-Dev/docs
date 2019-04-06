@@ -177,7 +177,7 @@ rather than the size of the overall graph.
 it calls forth a far more visible and actionable kind of governance. Agility is another measure of speed. How easy and quickly can your code adapt to changing business? graph databases 
 are in step with changing business environments.
 
-## Native graph technology //https://neo4j.com/blog/native-vs-non-native-graph-technology/
+## Native graph technology
 
 ### Native graph storage
 Some graph databases use native graph storage that is optimized and designed for storing and managing graphs. The benefit of native graph storage is that its purpose-built stack 
@@ -200,6 +200,7 @@ This is far cheaper than brute-forcing the result because it considers far fewer
 we’ll still end up considering the entire dataset.
 
 Ex. Finding extended friends in a relational database versus efficient finding in Neo4j. Source: [Graph Databases, OReilly](https://www.oreilly.com/library/view/graph-databases/9781449356255/)
+
 | Depth | DBMS exec time | Neo4j exec time | Dataset |
 |-------|-----------------|-----------------|---------|
 | 2     | 0.016           | 0.01            | ~2500   |   
@@ -207,7 +208,7 @@ Ex. Finding extended friends in a relational database versus efficient finding i
 | 4     | 1543.505        | 1.359           | ~600000 |   
 | 5     | Unfinished      | 2.132           | ~800000 |  
 
-### Query language      // https://neo4j.com/blog/imperative-vs-declarative-query-languages/
+### Query language      
 Diagrams are great for describing graphs outside of any technology context, but when it comes to using a database,  we  need  some  other  mechanism  for  creating,  manipulating,  and  querying data. We need a query language.
 The two main paradigms of database query languages are imperative and declarative languages.
 
@@ -220,7 +221,7 @@ Example: Cypher(Neo4j)
 #### Declarative Query Languages
 Declarative query languages let users express what data to retrieve, letting the engine underneath take care of seamlessly retrieving it, rather than the specifics on how to complete it.
 Using a declarative database query language may also result in better code than what can be created manually, and it is usually easier to understand the purpose of the code written in a declarative language.
-Example: Gremlin, GraphQL (Neo4J-GraphQL integration Simplifying Data-Intensive Development 2019)    // https://neo4j.com/news/graphql-neo4j-grand-stack/
+Example: Gremlin, GraphQL (Neo4J-GraphQL integration Simplifying Data-Intensive Development 2019)    
 
 
 ### Database objects
@@ -228,6 +229,7 @@ The objects/nodes of the graph represent the real world objects that we want to 
 For our feed database we distinguish the following basic objects:
 
 Menu Object: set of recipes that together form a menu. 
+
 | Labels | Properties                                     |
 |--------|------------------------------------------------|
 | Menu   | Name: menu_name                                |
@@ -236,6 +238,7 @@ Menu Object: set of recipes that together form a menu.
 
 
 Recipe object: is a tutorial with a set of ingredients and properties that make up a recipe.
+
 | Labels      | Properties        |
 |-------------|-------------------|
 | Recipe      | Name: recipe_name |
@@ -245,6 +248,7 @@ Recipe object: is a tutorial with a set of ingredients and properties that make 
 
 
 Ingredient object: it is the food itself. Any product of the supermarket, anything that is attributed to nutritional values is considered an ingredient/food.
+
 | Labels                          | Properties                |
 |---------------------------------|---------------------------|
 | Ingredient/food_product         | Energy: _ kcal            |
@@ -255,6 +259,7 @@ Ingredient object: it is the food itself. Any product of the supermarket, anythi
 |                                 | Alcohol: _ mg             |
 
 Nutrient object: There are many types and variants of nutrients, but we are not going to break down nutrients into more atomic components. 
+
 | Labels                         | Properties |
 |--------------------------------|------------|
 | Nutrient                       | Unit:_     |
@@ -262,6 +267,7 @@ Nutrient object: There are many types and variants of nutrients, but we are not 
 | Nutrient_name                  |            |
 
 Aditive object: Non-nutritive contribution. There are many types and variants of aditives.
+
 | Labels                           | Properties |
 |----------------------------------|------------|
 | Aditive                          | Unit:_     |
@@ -270,9 +276,6 @@ Aditive object: Non-nutritive contribution. There are many types and variants of
 
 The properties of each object above are not definitive, you can eliminate and add new properties without interfering with the operation of the graph. This 
 leaves us open a wide range of possibilities and variants within the same database.
-
-//https://www.fda.gov/Food/IngredientsPackagingLabeling/FoodAdditivesIngredients/ucm094211.htm
-
 
 Lists of different types of data:
     - aditives.txt
@@ -287,11 +290,13 @@ Lists of different types of data:
 ### Database relationships
 The relational edges represent the relationship between the objects/nodes.
 For our feed database we distinguish the following basic relationship labels:
+
 | Labels  | Meaning                          |
 |---------|----------------------------------|
 | Contain | Carry or have [something] inside |
 | Compose | Be part of something             |
 | . . .   | . . .                            |
+
 These labels are what allow us to traverse the graph respecting the coherence and logic of the business. More labels are 
 added to the list as new relationships appear, the inclusion of new objects fosters new relationships.
 
@@ -322,3 +327,11 @@ Reglamento (UE) 1169/2011 [.pdf](https://www.boe.es/doue/2011/304/L00018-00063.p
 
 
 ➤ [Index](#Index)
+
+
+## References
+- https://www.fda.gov/Food/IngredientsPackagingLabeling/FoodAdditivesIngredients/ucm094211.htm
+- https://neo4j.com/news/graphql-neo4j-grand-stack/
+- https://neo4j.com/blog/imperative-vs-declarative-query-languages/
+- https://neo4j.com/blog/native-vs-non-native-graph-technology/
+- [Graph Databases Book, OReilly](https://www.oreilly.com/library/view/graph-databases/9781449356255/)
