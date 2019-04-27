@@ -8,7 +8,7 @@
 - [Python as data management](#Python-as-data-management)
   * [Python 2.x vs 3.x](#Python-2.x-vs-3.x)
 - [Use Cases: Using Personas](#Using-Personas)
-- [Requeriments](#Requirements)
+- [Requirements](#Requirements)
 - [Database](#Database)
   * [Graph Database](#Graph-Database)
   * [Migration](#Migration)
