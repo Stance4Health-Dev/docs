@@ -8,7 +8,7 @@
 - [Python as data management](#Python-as-data-management)
   * [Python 2.x vs 3.x](#Python-2.x-vs-3.x)
 - [Use Cases: Using Personas](#Using-Personas)
-- [Requeriments](#Requeriments)
+- [Requeriments](#Requirements)
 - [Database](#Database)
   * [Graph Database](#Graph-Database)
   * [Migration](#Migration)
@@ -134,10 +134,10 @@ Essentials of Interaction Design. Indianapolis, Wiley.
 
 ➤ [Index](#Index)
 
-## Requeriments
+## Requirements
 
 > Developing
-List of system requeriments based on previous uses cases.
+List of system requirements based on tests.
 
 ## Database
 
