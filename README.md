@@ -136,8 +136,8 @@ Essentials of Interaction Design. Indianapolis, Wiley.
 
 ## Requirements
 
-> Developing
-List of system requirements based on tests.
+We are facing one of the most important phases in the development of the project, constitutes a complete description of the behavior of a system to be developed. Fulfilling these behaviors are the objectives of the requirements.
+This requirement specification acts as a link between developer, client and future users, which allows them to maintain an initial and constant communication during the development of the project, attending possible contingencies. To understand the business logic and its needs, it is not enough to intuit them, for this purpose it is recommended to use some technique to obtain requirements already established and worked by the industry (or combination of different techniques). In our case, we use the technique described in the previous sections "Personas", where we simulate future users of the system, based in evidences like news, articles, surveys, studies, and we can extract their behaviors. From these behaviors we can extract the different needs, which we put together in the form of a test using TDD. Once we satisfy the tests, we are fulfilling in the same way with the behavior that the system requires.
 
 ## Database
 
@@ -146,6 +146,8 @@ Relational Databases use a ledger-style representation and come with a key featu
 
 In the current time, there has been a data explotion, petabytes and exabytes, known as Big Data. We can store it in disk, but, how we interact with all of this data? how we managment this big volume of primary and foreign keys? 
 Although we continue to use them with the next versions, they are based on the initial scheme. So, these first tools are not suitable for these needs. But we still need to store all this information in a system where relationships play a crucial role. Innovation reappeared and databases based on graphs emerged.
+
+Here you can check the [Behaviors based on Personas list:](https://github.com/Stance4Health-Dev/common/blob/master/README.md)
  
 ## Graph Database
 
@@ -282,7 +284,7 @@ Aditive object: Non-nutritive contribution. There are many types and variants of
 The properties of each object above are not definitive, you can eliminate and add new properties without interfering with the operation of the graph. This 
 leaves us open a wide range of possibilities and variants within the same database.
 
-Lists of different types of data:
+Lists of different types of data:movistar
 + aditives.txt
 + nutrients.txt
 + vitamins.txt
