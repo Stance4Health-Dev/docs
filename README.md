@@ -1,3 +1,6 @@
+
+# Documentation
+
 ## Index
 - [Abstract](#Abstract)
 - [How will be the development experience](#Continuous-Integration)
@@ -7,6 +10,7 @@
   * [Classic vulnerabilities](#Some-classic-vulnerabilities-to-consider)
 - [Python as data management](#Python-as-data-management)
   * [Python 2.x vs 3.x](#Python-2.x-vs-3.x)
+- [Hexagonal architecture](#Hexagonal-architecture)
 - [Use Cases: Using Personas](#Using-Personas)
 - [Requirements](#Requirements)
 - [Database](#Database)
@@ -65,9 +69,9 @@ To improve efficiency and test times, automatic tests are often used. Advantages
 
 ### Using Travis CI
 
-Travis CI es un sistema de integración continua que ejecuta los test de nuestro sistema cada vez que se realiza un commit a Github. Asi, si tu último commit corrompió el sistema es fácil detectarlo, arreglaro o volver al commit/estado anterior. La configuración para  poner a punto Travis con el repositorio es muy sencilla.
+Travis CI is a continuous integration system that executes the tests of our system every time a commit is pushed to Github. If your last commit was corrupted will be easer to the system to detect it, fix or come back to the previous commit/state. The configuration to tune Travis with the repository is very simple.
 En el directorio principal del repositorio tenemos el siguiente script en Python: 
-
+In the main directory of the repository we have the following script in Python:
 ```setup.py ```
 ```
 from setuptools import setup, find_packages
@@ -83,12 +87,12 @@ setup(
 	python_requires='>=3',
 )
 ```
-Con este script ponemos a puntos la ejecución de los test. Importamos el modulo setuptools con la que, de forma facil, establecemos una configuración y unos parametros para nuestro repositorio en concreto. En donde indicamos el nombre del repositorio, su direccion en github, la licencia, el autor, las palabras claves del repo, la descripcion del dominio de los test, que test queremos que se ejecuten según un patron en los nombres de los archivos, y la versión de Python con la que queremos testear el código. Además, utilizaremos Coverage, a tool for measuring code coverage of Python programs. It monitors your program, noting which parts of the code have been executed, then analyzes the source to identify code that could have been executed but was not.[x]
+With this script we have the execution of the tests ready. We neew to import the 'setuptools' module with which, we establish a configuration and parameters for our specific repository. Where we indicate the name of the repository, its address in github, the license, the author, the keywords of the repo, the description of the domain of the tests, which test we want to be executed according to a pattern in the names of the files, and the version of Python with which we want to test the code. In addition, we will use Coverage, a tool for measuring code coverage of Python programs. It monitors your program, noting which parts of the code have been executed, then analyzes the source to identify the code that could have been executed but was not.[x]
 
-Para ejecutar los test, nos vamos al directorio donde tenemos el script setup.py y abrimos la terminal. Ejecutamos lo siguiente:
+To run the tests, we go to the directory where we have the script setup.py and open the terminal. After, we execute the following:
 ``` coverage run --source=src setup.py test ```
 
-Una vez que tenemos lista la ejecucuon de nuestros, necesitamos enlazar el sistema Travis CI con nuestro repo. Para ello iniciamos sesión en la plataforma de Travis y agregamos nuestro repositorio. Pero esto no es suficiente, necesitamos crear un script de configuración que Travis pueda leer y ejecutarse como especifica.
+Once we have our execution ready, we need to link the Travis CI system with our repo. To do this, we started a session on Travis platform and add our repository. But this is not enough, we need to create a configuration script that Travis can read and execute as specified.
 
 ```.travis.yml ```
 ```
@@ -107,15 +111,15 @@ after_success:
 - coveralls
 ```
 
-En este script le indicamos a Travis como tiene que ejecutar las pruebas. Se indica el lenguaje de programación, las versiones soportadas (Travis ejecutará los test en cada una de las versiones con entornos virtuales), los modulos necesarios, la sentencia de ejecución de los test y finalmente la llamada a coveralls,  a web service to help you track your code coverage over time, and ensure that all your new code is fully covered.[x]
+In this script we tell Travis how he has to run the tests. It indicates the programming language, the supported versions (Travis will run the tests in each of the versions with virtual environments), the necessary modules, the sentence of execution of the tests and finally a call to coveralls, a web service to help you track your code coverage over time, and ensure that all your new code is fully covered.[x]
 
-Con esta configuración, Travis ya podrá verificar nuestro repositorio en cada commit. 
+With this configuration, Travis will now be able to verify our repository in each commit.
 
-Estado del repositorio Travis CI:  https://www.travis-ci.org/Stance4Health-Dev/common
+Travis CI repository status: https://www.travis-ci.org/Stance4Health-Dev/common
 
 [![Build Status](https://www.travis-ci.org/Stance4Health-Dev/common.svg?branch=master)](https://www.travis-ci.org/Stance4Health-Dev/common)
 
-Estado del reòsitorio en Coveralls: https://coveralls.io/github/Stance4Health-Dev/common
+Repository status in Coveralls: https://coveralls.io/github/Stance4Health-Dev/common
 
 [![Coverage Status](https://coveralls.io/repos/github/Stance4Health-Dev/common/badge.svg)](https://coveralls.io/github/Stance4Health-Dev/common) 
 
@@ -158,7 +162,6 @@ Most of the 2.x libraries are already available in 3.x, in the following [link](
 
 <a name="Using-Personas"/>
 
-
 ## Hexagonal architecture
 
 The set of relationships between the components of a system forms its architecture. The hexagonal architecture also known as 'onion' architecture, architecture of 'ports and adapters', and even 'clean' architecture.
@@ -170,9 +173,9 @@ It stands out for encapsulating the core of the system making it agnostic from t
 
 - Core:
 
-    - Domain model: represent the objects and states of the system.
-    - Domain services: here we find the behavior of the system represented by interfaces as ports. The abstraction which comunicates with external world.
-    - Application service: here are the most specific behaviors of the system.
+   - Domain model: represent the objects and states of the system.
+   - Domain services: here we find the behavior of the system represented by interfaces as ports. The abstraction which comunicates with external world.
+   - Application service: here are the most specific behaviors of the system.
 
 - Infrastructure: It contains essential infrastructure. Everything related to data storage, database management, use of the file system for storage, dependencies management.
 
@@ -180,18 +183,15 @@ For example, to digitize a food-type we need to implement everything that is rel
 In the same way, when you want to call some function of the core from another system, through an HTTP request for example, the kernel is agnositco of who and how its happening.
 In terms of database base, the kernel does not care how it will be stored, whether in memory, SQL or graphs.
 If the code is modularized respecting the limits of the domain, we find certain development characteristics:
-    - Fastest compile time for each module.
-    - Isolation and compilation separately.
-    - It makes your code easier to test.
-    - More precise error detection and solution.
-    - Being so unitary, the modules can be transferred to another project.    
-    - Being agnostic of the database, the same scheme can combine the use of different types of databases according to the problem to solve.
-    - Independence of use of frameworks. The system should not depend on any framework or library.
+
+  - Fastest compile time for each module.
+  - Isolation and compilation separately.
+  - It makes your code easier to test.
+  - More precise error detection and solution.
+  - Being so unitary, the modules can be transferred to another project.
+  - Being agnostic of the database, the same scheme can combine the use of different types of databases according to the problem to solve.
+  - Independence of use of frameworks. The system should not depend on any framework or library.
    
-
-
-
-
 
 ## Use Cases: Using Personas
 Personas bring us a tool that allows to create models that represent a user or group of users focused on a specific activity. With the publication in 1998 of the book 'The Inmates Are Running the Asylum', [Alan Cooper](https://twitter.com/MrAlanCooper) begins his approach towards what we know as Personas today.
