@@ -65,7 +65,62 @@ To improve efficiency and test times, automatic tests are often used. Advantages
 
 ### Using Travis CI
 
-> Developing..
+Travis CI es un sistema de integración continua que ejecuta los test de nuestro sistema cada vez que se realiza un commit a Github. Asi, si tu último commit corrompió el sistema es fácil detectarlo, arreglaro o volver al commit/estado anterior. La configuración para  poner a punto Travis con el repositorio es muy sencilla.
+En el directorio principal del repositorio tenemos el siguiente script en Python: 
+
+```setup.py ```
+```
+from setuptools import setup, find_packages
+
+setup(
+	name='common',
+	url='https://github.com/Stance4Health-Dev/common',
+	license='GNU General Public License v3.0',
+	author='jimcase',
+	keywords='test unittest common',
+	description=u'Testing using unittest for common',
+	packages=find_packages(include=['test_*.py']),
+	python_requires='>=3',
+)
+```
+Con este script ponemos a puntos la ejecución de los test. Importamos el modulo setuptools con la que, de forma facil, establecemos una configuración y unos parametros para nuestro repositorio en concreto. En donde indicamos el nombre del repositorio, su direccion en github, la licencia, el autor, las palabras claves del repo, la descripcion del dominio de los test, que test queremos que se ejecuten según un patron en los nombres de los archivos, y la versión de Python con la que queremos testear el código. Además, utilizaremos Coverage, a tool for measuring code coverage of Python programs. It monitors your program, noting which parts of the code have been executed, then analyzes the source to identify code that could have been executed but was not.[x]
+
+Para ejecutar los test, nos vamos al directorio donde tenemos el script setup.py y abrimos la terminal. Ejecutamos lo siguiente:
+``` coverage run --source=src setup.py test ```
+
+Una vez que tenemos lista la ejecucuon de nuestros, necesitamos enlazar el sistema Travis CI con nuestro repo. Para ello iniciamos sesión en la plataforma de Travis y agregamos nuestro repositorio. Pero esto no es suficiente, necesitamos crear un script de configuración que Travis pueda leer y ejecutarse como especifica.
+
+```.travis.yml ```
+```
+language: python
+python:
+- '3.6'
+- '3.5'
+
+install:
+- pip install coveralls
+- pip install -r requirements.txt
+- pip install setuptools
+script:
+- coverage run --source=src setup.py test
+after_success:
+- coveralls
+```
+
+En este script le indicamos a Travis como tiene que ejecutar las pruebas. Se indica el lenguaje de programación, las versiones soportadas (Travis ejecutará los test en cada una de las versiones con entornos virtuales), los modulos necesarios, la sentencia de ejecución de los test y finalmente la llamada a coveralls,  a web service to help you track your code coverage over time, and ensure that all your new code is fully covered.[x]
+
+Con esta configuración, Travis ya podrá verificar nuestro repositorio en cada commit. 
+
+Estado del repositorio Travis CI:  https://www.travis-ci.org/Stance4Health-Dev/common
+
+[![Build Status](https://www.travis-ci.org/Stance4Health-Dev/common.svg?branch=master)](https://www.travis-ci.org/Stance4Health-Dev/common)
+
+Estado del reòsitorio en Coveralls: https://coveralls.io/github/Stance4Health-Dev/common
+
+[![Coverage Status](https://coveralls.io/repos/github/Stance4Health-Dev/common/badge.svg)](https://coveralls.io/github/Stance4Health-Dev/common) 
+
+
+
 
 ### Battery of tests
 
@@ -102,6 +157,41 @@ Most of the 2.x libraries are already available in 3.x, in the following [link](
 ➤ [Index](#Index)
 
 <a name="Using-Personas"/>
+
+
+## Hexagonal architecture
+
+The set of relationships between the components of a system forms its architecture. The hexagonal architecture also known as 'onion' architecture, architecture of 'ports and adapters', and even 'clean' architecture.
+It stands out for encapsulating the core of the system making it agnostic from the outside. Implements ports as the output and the inputs of the system, this being the way of relating to the outside. This architecture is characterized by separating the system into 3 main components.
+
+![Graph example](https://github.com/Stance4Health-Dev/docs/blob/master/img/6-arch.png)
+
+- Application: User interface. Set of users' interactions of the users that the system receives as requests. As HTTP, sending and receiving json data.
+
+- Core:
+
+    - Domain model: represent the objects and states of the system.
+    - Domain services: here we find the behavior of the system represented by interfaces as ports. The abstraction which comunicates with external world.
+    - Application service: here are the most specific behaviors of the system.
+
+- Infrastructure: It contains essential infrastructure. Everything related to data storage, database management, use of the file system for storage, dependencies management.
+
+For example, to digitize a food-type we need to implement everything that is related to the food itself. Implementing a serialization to convert a food-type object to JSON is not the responsibility of the food itself, so that function should not exist in the food class. Instead, the food class should be implemented so that it has easy reading access. For this, a bridge module is used wich is capable to run all these needs. In Python we have the modules 'json' and 'pickle' that facilitate us and save a lot of work.
+In the same way, when you want to call some function of the core from another system, through an HTTP request for example, the kernel is agnositco of who and how its happening.
+In terms of database base, the kernel does not care how it will be stored, whether in memory, SQL or graphs.
+If the code is modularized respecting the limits of the domain, we find certain development characteristics:
+    - Fastest compile time for each module.
+    - Isolation and compilation separately.
+    - It makes your code easier to test.
+    - More precise error detection and solution.
+    - Being so unitary, the modules can be transferred to another project.    
+    - Being agnostic of the database, the same scheme can combine the use of different types of databases according to the problem to solve.
+    - Independence of use of frameworks. The system should not depend on any framework or library.
+   
+
+
+
+
 
 ## Use Cases: Using Personas
 Personas bring us a tool that allows to create models that represent a user or group of users focused on a specific activity. With the publication in 1998 of the book 'The Inmates Are Running the Asylum', [Alan Cooper](https://twitter.com/MrAlanCooper) begins his approach towards what we know as Personas today.
@@ -209,7 +299,7 @@ nutrient relationships, these relationships lead to nodes that represent "nutrie
 This is far cheaper than brute-forcing the result because it considers far fewer members of the network, that is, it considers only those that are connected to "apple". Of course, if all nutrients make up the "apple" object, 
 we’ll still end up considering the entire dataset.
 
-Ex. Finding extended friends in a relational database versus efficient finding in Neo4j. Source: [Graph Databases, OReilly](https://www.oreilly.com/library/view/graph-databases/9781449356255/)
+Ex. Finding extended friends in a relational database versus efficient finding in Neo4j. http://aitorrm.github.io/t%C3%A9cnicas%20y%20metodolog%C3%ADas/arquitectura_software_limpia/Source: [Graph Databases, OReilly](https://www.oreilly.com/library/view/graph-databases/9781449356255/)
 
 | Depth | DBMS exec time | Neo4j exec time | Dataset |
 |-------|-----------------|-----------------|---------|
@@ -286,7 +376,7 @@ Aditive object: Non-nutritive contribution. There are many types and variants of
 The properties of each object above are not definitive, you can eliminate and add new properties without interfering with the operation of the graph. This 
 leaves us open a wide range of possibilities and variants within the same database.
 
-Lists of different types of data:movistar
+Lists of different types of data:
 + aditives.txt
 + nutrients.txt
 + vitamins.txt
@@ -344,3 +434,27 @@ Reglamento (UE) 1169/2011 [.pdf](https://www.boe.es/doue/2011/304/L00018-00063.p
 - https://neo4j.com/blog/imperative-vs-declarative-query-languages/
 - https://neo4j.com/blog/native-vs-non-native-graph-technology/
 - [Graph Databases Book, OReilly](https://www.oreilly.com/library/view/graph-databases/9781449356255/)
+http://aitorrm.github.io/t%C3%A9cnicas%20y%20metodolog%C3%ADas/arquitectura_software_limpia/
+
+https://blog.eizinger.io/5835/rust-s-custom-derives-in-a-hexagonal-architecture-incompatible-ideas
+https://stackoverflow.com/questions/22587148/trying-to-understand-what-travis-ci-does-and-when-it-should-be-used
+
+
+https://coverage.readthedocs.io/en/v4.5.x/
+https://docs.coveralls.io/
+
+https://blog.octo.com/en/hexagonal-architecture-three-principles-and-an-implementation-example/
+http://www.dossier-andreas.net/software_architecture/ports_and_adapters.html
+
+
+
+
+
+
+
+
+
+
+
+
+
