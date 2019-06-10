@@ -164,7 +164,7 @@ Most of the 2.x libraries are already available in 3.x, in the following [link](
 The set of relationships between the components of a system forms its architecture. The hexagonal architecture also known as 'onion' architecture, architecture of 'ports and adapters', and even 'clean' architecture.
 It stands out for encapsulating the core of the system making it agnostic from the outside. Implements ports as the output and the inputs of the system, this being the way of relating to the outside. This architecture is characterized by separating the system into 3 main components.
 
-![Graph example](https://github.com/Stance4Health-Dev/docs/blob/master/img/6-arch.png)
+![Hexagonal architecture diagram](https://github.com/Stance4Health-Dev/docs/blob/master/img/6-arch.png)
 
 - Application: User interface. Set of users' interactions of the users that the system receives as requests. As HTTP, sending and receiving json data.
 
